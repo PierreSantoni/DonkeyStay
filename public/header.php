@@ -20,7 +20,7 @@
         <nav class="navbar navbar-dark bg-donkey-primary" aria-label="offcanvas navbar">
             <div class="container-fluid flex-nowrap">
                 <div class="text-center navbar-brand">
-                    <img src="donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive" class="img-fluid w-25">
+                    <img src="img/donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive" class="img-fluid w-25">
                 </div>
                 <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav text-center flex-md-row">

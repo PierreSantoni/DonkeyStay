@@ -2,7 +2,7 @@
     <footer class="footer mt-auto py-3 bg-donkey-primary sticky">
         <div class="container-fluid">
             <div class="text-center">
-                <img src="donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive">
+                <img src="img/donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive">
                 <h5 class="h1">DonkeyStay</h5>
             </div>
             <div class="hr mt-3 mb-3"></div>
