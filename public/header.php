@@ -15,8 +15,8 @@
 
 </head>
 
-<body>
-    <header>
+<body class="d-flex flex-column h-100">
+    <header class="sticky-top">
         <nav class="navbar navbar-dark bg-donkey-primary" aria-label="offcanvas navbar">
             <div class="container-fluid flex-nowrap">
                 <div class="text-center navbar-brand">
@@ -100,3 +100,4 @@
         </nav>
     </header>
     <main>
+        <h1>HELLO WORLD !!</h1>
