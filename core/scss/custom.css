@@ -12026,4 +12026,9 @@ textarea.form-control-lg {
 }
 .bg-donkey-primary {
   background-color: #033C65;
+  color: hsl(100, 100%, 100%);
+}
+
+.mt-n1 {
+  margin-top: -0.25rem !important;
 }/*# sourceMappingURL=custom.css.map */
