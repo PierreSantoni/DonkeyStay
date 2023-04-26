@@ -1,7 +1,14 @@
 @import "../../bootstrap-5.3.0-alpha3/scss/bootstrap.scss";
 
+$enable-negative-margins: true;
+
 $bg-donkey-primary:#033C65;
 
 .bg-donkey-primary{
     background-color: $bg-donkey-primary;
+    color: hsl(100, 100%, 100%);
+}
+
+.mt-n1 {
+    margin-top: -0.25rem !important;
 }
