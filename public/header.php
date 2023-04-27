@@ -1,7 +1,16 @@
 <?php
-    require_once '../models/Autoloader.php';
-    Autoloader::register();
+
+use App\models\Autoloader;
+use App\models\database\User;
+
+require_once '../models/Autoloader.php';
+Autoloader::register();
+
+$model = new User;
+var_dump($model->findAll());
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -104,4 +113,3 @@
         </nav>
     </header>
     <main>
-        <h1>HELLO WORLD !!</h1>
