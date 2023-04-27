@@ -1,6 +1,8 @@
 <?php include 'header.php'; ?>
 
-<div class="home-page">
+
+
+<div class="home-page my-5">
     <div class="container">
         <div class="row">
             <div class="col-md-6 mx-auto">
@@ -40,29 +42,25 @@
 </div>
 
 
-<div class="container-fluid bg-image p-0" style="background-color: #343944;">
+<div class="container-fluid bg-image p-0" style="background-color: rgb(136 136 136); max-width: 800px; border-radius: 20px;">
     <div class="row">
-        <div class="col-md-12">
+        <div id="About" class="col-md-12 text-center text-md-left">
             <br><br>
-            <h2 class="my-5 text-center" style="color: white;">About Us</h2>
+            <h2 class="my-5" style="color: white;">About Us</h2>
 
-            <p class="mx-5 my-5 text-center" style="font-size: 1.2em; color: white;">
+            <p class="mx-md-auto my-5 text-center" style="font-size: 1.2em; color: white;">
                 The way we travel and move has changed in the last few years. We no longer want the typical photo that
-                all our contacts
-                post on Instagram. <br><br>
+                all our contacts post on Instagram. <br><br>
 
                 We no longer want to elbow our way through crowded museums. We no longer want to view the city
                 through the mobile lens. <br><br>
 
                 It's not about travelling, it's about discovering. Travellers are the 21st century pilgrims who seek the
-                basic,
-                long-lasting and human essence. The city is a canvas of emotions and experiences and culture is the
-                invisible
-                architecture that frames it. <br><br>
+                basic, long-lasting and human essence. The city is a canvas of emotions and experiences and culture is the
+                invisible architecture that frames it. <br><br>
 
                 Only YOU designs a new way of travelling inspired by the local and human connection where each hotel
-                turns into a
-                reflection of its environment. Dear travellers: you've reached your destination.
+                turns into a reflection of its environment. Dear travellers: you've reached your destination.
                 <br>
             </p>
         </div>
@@ -71,9 +69,11 @@
 
 
 
+
+
 <div class="container-fluid bg-image p-0 about-rooms">
     <div class="row">
-        <div class="col-md-12">
+        <div id="Rooms" class="col-md-12">
             <h2 class="my-5 text-center">Our Rooms</h2>
         </div>
     </div>
@@ -84,7 +84,6 @@
             </div>
             <div class="col-md-6">
                 <div class="text-center">
-
                     <h3>Piece of Mind</h3>
                 </div>
                 <p class="mx-5 my-5 text-center" style="font-size: 1.2em;">The way we travel and move has changed in the last few years. We no longer want the typical photo that all our contacts
@@ -92,7 +91,7 @@
                     through the mobile lens.
                     It's not about travelling, it's about discovering.</p>
                 <div class="text-center">
-                    <a href="#" class="btn btn-primary btn-lg">EXPLORE OUR ROOMS</a>
+                    <a href="rooms.php" class="btn btn-primary btn-lg">EXPLORE OUR ROOMS</a>
                 </div>
             </div>
         </div>
