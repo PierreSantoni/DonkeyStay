@@ -11,7 +11,7 @@ class DataBaseAccess extends PDO
     private const DBHOST = 'localhost';
     private const DBNAME = 'DonkeyStay';
     private const DBUSER = 'root';
-    private const DBPASS = 'Cataleia18*Hadrien22*';
+    private const DBPASS = '';
 
     private function __construct()
     {
