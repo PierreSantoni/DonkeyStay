@@ -10,7 +10,7 @@ class User extends DataBaseModel
     private $userLogin;
     private $userPass;
 
-    public function __construc()
+    public function __construct()
     {
         $this->table = 'user';
     }

@@ -1,16 +1,3 @@
-<?php
-
-use App\models\Autoloader;
-use App\models\database\User;
-
-require_once '../models/Autoloader.php';
-Autoloader::register();
-
-$model = new User;
-var_dump($model->findAll());
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,10 +14,9 @@ var_dump($model->findAll());
     <link href="../core/scss/custom.css" rel="stylesheet">
 
 </head>
-
-<body class="d-flex flex-column h-100">
-    <header class="sticky-top">
-        <nav class="navbar navbar-dark bg-donkey-primary" aria-label="offcanvas navbar">
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-donkey-primary fixed-top" aria-label="offcanvas navbar">
             <div class="container-fluid flex-nowrap">
                 <div class="text-center navbar-brand">
                     <img src="img/donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive" class="img-fluid w-25">
@@ -112,4 +98,4 @@ var_dump($model->findAll());
             </div>
         </nav>
     </header>
-    <main>
+    <main style="margin-top:96px;">

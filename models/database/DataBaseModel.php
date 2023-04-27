@@ -7,6 +7,12 @@ class DataBaseModel extends DataBaseAccess
 
     private $dbAccess;
 
+    public function findAll()
+    {
+        $query = $this->requete('SELECT * FROM '. $this->table);
+        return $query->fetchAll();
+    }
+
     public function requete(string $sql, array $attributs = null)
     {
         $this->dbAccess = DataBaseAccess::getInstance();
@@ -18,11 +24,5 @@ class DataBaseModel extends DataBaseAccess
         }else{
             return $this->dbAccess->query($sql);
         }
-    }
-
-    public function findAll()
-    {
-        $query = $this->query('SELECT * FROM '. $this->table);
-        return $query->fetchAll(); 
     }
 }
