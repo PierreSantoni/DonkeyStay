@@ -12,11 +12,11 @@
                         </div>
                         <div class="form-group">
                             <label for="arrivee">Arrival Date</label>
-                            <input type="date" class="form-control" id="arrivee" placeholder="Enter arrival date">
+                            <input type="date" class="form-control" id="arrivee" placeholder="Enter arrival date" min="<?php echo date('Y-m-d'); ?>">
                         </div>
                         <div class="form-group">
                             <label for="depart">Departure Date</label>
-                            <input type="date" class="form-control" id="depart" placeholder="Enter departure date">
+                            <input type="date" class="form-control" id="depart" placeholder="Enter departure date" min="<?php echo date('Y-m-d'); ?>">
                         </div>
                         <div class="form-group">
                             <label for="personnes">Number of Guests</label>
@@ -39,7 +39,8 @@
     </div>
 </div>
 
-<div class="container-fluid bg-image p-0" style="background-color: #0652f8;">
+
+<div class="container-fluid bg-image p-0" style="background-color: #343944;">
     <div class="row">
         <div class="col-md-12">
             <br><br>
