@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-donkey-primary" aria-label="offcanvas navbar">
+        <nav class="navbar navbar-dark bg-donkey-primary fixed-top" aria-label="offcanvas navbar">
             <div class="container-fluid flex-nowrap">
                 <div class="text-center navbar-brand">
                     <img src="img/donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive" class="img-fluid w-25">
@@ -99,4 +99,4 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main style="margin-top:96px;">
