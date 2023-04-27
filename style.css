@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 .home-page{
     margin: 0;
@@ -88,8 +89,25 @@ label {
     border-radius: 5px 5px 5px 0;
 }
 
-
+/*rooms*/
+.rooms{
+    padding: 90px;
+}
 
 .about-rooms{
     margin: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
