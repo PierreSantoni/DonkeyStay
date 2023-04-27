@@ -11,7 +11,9 @@
     <script src="https://kit.fontawesome.com/803e922635.js" crossorigin="anonymous"></script>
 
     <!-- CUSTOM CSS (Bootsrap 5.3.0 Alpha 3 inside)-->
-    <link href="../core/scss/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
