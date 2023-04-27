@@ -1,5 +1,5 @@
 <?php
-    require_once '../models/autoloader';
+    require_once '../models/Autoloader.php';
     Autoloader::register();
 ?>
 <!DOCTYPE html>
