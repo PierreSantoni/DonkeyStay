@@ -5,20 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>DonkeyStay</title>
-    <meta name="description" content="Discover and book your perfect hotel from around the world with our easy-to-use hotel reservation service. Find the best deals on hotels, compare prices and read reviews from real travelers. Book your dream hotel today!">
-    
+
     <!-- FONTAWESOME JS -->
     <script src="https://kit.fontawesome.com/803e922635.js" crossorigin="anonymous"></script>
-    
+
     <!-- CUSTOM CSS (Bootsrap 5.3.0 Alpha 3 inside)-->
-    <link href="custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="../core/scss/custom.css" rel="stylesheet">
+
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-donkey-primary" aria-label="offcanvas navbar">
+        <nav class="navbar navbar-dark bg-donkey-primary fixed-top" aria-label="offcanvas navbar">
             <div class="container-fluid flex-nowrap">
                 <div class="text-center navbar-brand">
                     <img src="img/donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive" class="img-fluid w-25">
@@ -100,4 +99,4 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main style="margin-top:96px;">
