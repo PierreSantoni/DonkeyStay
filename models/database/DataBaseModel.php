@@ -24,12 +24,12 @@ class DataBaseModel extends DataBaseAccess
         $fields = implode(" AND ", $fields);
         $fields = 'SELECT * FROM ' . $this->table . ' WHERE ' . $fields;
         $findBy = $this->requete($fields, $values);
-        
-        var_dump($values);
-        var_dump($fields);
-        var_dump($findBy);
-
         return $findBy->fetchAll();
+    }
+
+    public function findByID(int $id)
+    {
+        return $this->requete("SELECT * FROM {$this->table} WHERE {$this->table}id = $id")->fetch();
     }
 
     public function requete(string $sql, array $attributs = null)

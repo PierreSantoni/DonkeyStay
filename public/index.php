@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php require 'header.php'; ?>
 
     <div class="home-page">
     <div class="container">
@@ -100,4 +100,4 @@
     </div>
 </div>
 
-<?php include 'footer.php'; ?>
+<?php require 'footer.php'; ?>
