@@ -7,18 +7,21 @@ use PDOException;
 class DataBaseAccess extends PDO
 {
     private static $instance;
+    
+    private string $DBPASS;
 
     private const DBHOST = 'localhost';
     private const DBNAME = 'DonkeyStay';
     private const DBUSER = 'root';
-    private const DBPASS = '';
 
     private function __construct()
     {
+        $this->DBPASS = file_get_contents(__DIR__.'/DBpass');
+
         $DataSourceName = 'mysql:dbname=' . self::DBNAME . ';host=' . self::DBHOST;
 
         try{
-            parent::__construct($DataSourceName, self::DBUSER, self::DBPASS);
+            parent::__construct($DataSourceName, self::DBUSER, $this->DBPASS);
 
             $this->setAttribute(PDO::MYSQL_ATTR_INIT_COMMAND, 'SET NAMES utf8');
             $this->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -27,15 +30,6 @@ class DataBaseAccess extends PDO
             die($e->getMessage());
         }
     }
-
-    public static function getInstance ()
-    {
-        if(self::$instance === null){
-            self::$instance = new self();
-        }
-        return self::$instance;
-    }
-}
 
     public static function getInstance ()
     {
