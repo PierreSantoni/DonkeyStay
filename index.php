@@ -46,9 +46,9 @@
     <div class="row">
         <div id="About" class="col-md-12 text-center text-md-left">
             <br><br>
-            <h2 class="my-5" style="color: white;">About Us</h2>
+            <h2 class="my-5";">About Us</h2>
 
-            <p class="mx-md-auto my-5 text-center" style="font-size: 1.2em; color: white;">
+            <p class="mx-md-auto my-5 text-center" style="font-size: 1.2em;">
                 The way we travel and move has changed in the last few years. We no longer want the typical photo that
                 all our contacts post on Instagram. <br><br>
 

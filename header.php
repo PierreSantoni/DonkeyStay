@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DonkeyStay</title>
-
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <!-- FONTAWESOME JS -->
     <script src="https://kit.fontawesome.com/803e922635.js" crossorigin="anonymous"></script>
 
@@ -31,13 +31,13 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav text-center flex-md-row">
                         <li class="nav-item me-3">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link active" aria-current="page" href="/index.php">
                                 <i class="fa-solid fa-house"></i>
                                 <p>Home</p>
                             </a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/reservation.php">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Reservations</p>
                             </a>
@@ -49,7 +49,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Rooms">
+                            <a class="nav-link" href="/index.php#Rooms">
                                 <i class="fa-solid fa-bed"></i>
                                 <p>Our Rooms</p>
                             </a>
