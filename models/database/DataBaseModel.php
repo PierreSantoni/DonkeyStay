@@ -13,6 +13,25 @@ class DataBaseModel extends DataBaseAccess
         return $query->fetchAll();
     }
 
+    public function findBy(array $criteres)
+    {
+        $fields = [];
+        $values = [];
+        foreach ($criteres as $field => $value) {
+            $fields[] = "$field = ?" ;
+            $values[] = $value;
+        }
+        $fields = implode(" AND ", $fields);
+        $fields = 'SELECT * FROM ' . $this->table . ' WHERE ' . $fields;
+        $findBy = $this->requete($fields, $values);
+        
+        var_dump($values);
+        var_dump($fields);
+        var_dump($findBy);
+
+        return $findBy->fetchAll();
+    }
+
     public function requete(string $sql, array $attributs = null)
     {
         $this->dbAccess = DataBaseAccess::getInstance();
