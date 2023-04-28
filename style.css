@@ -107,6 +107,32 @@ label {
 
 
 
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+    margin: 0;
+}
+
+.carousel-inner>.item {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    width: 50%;
+}
+
+.carousel-inner>.item:nth-child(2n) {
+    margin-right: 0;
+}
+
 
 
 

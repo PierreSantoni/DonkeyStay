@@ -10,3 +10,10 @@
         depart.setAttribute('min', arrivee.value);
     });
 
+    $(document).ready(function(){
+  $('.carousel').carousel({
+    interval: 4000
+  })
+});
+
+
