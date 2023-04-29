@@ -74,7 +74,7 @@ class DataBaseModel extends DataBaseAccess
         $delete = $this->requete($delete,$id);
         return $delete;
     }
-
+    
     public function requete(string $sql, array $attributs = null)
     {
         $this->dbAccess = DataBaseAccess::getInstance();
