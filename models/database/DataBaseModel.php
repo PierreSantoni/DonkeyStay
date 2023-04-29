@@ -32,6 +32,24 @@ class DataBaseModel extends DataBaseAccess
         return $this->requete("SELECT * FROM {$this->table} WHERE {$this->table}id = $id")->fetch();
     }
 
+    public function create(DataBaseModel $dbModel)
+    {
+        $fields = [];
+        $nbValues = [];
+        $values = [];
+        foreach ($dbModel as $field => $value) {
+            if($field !== 'dbAccess' && $field !== 'table' && $value !== null){
+                $fields[] = "`$field`";
+                $nbValues[] = "?";
+                $values[] = $value;
+            }
+        }
+        $fields = implode(", ", $fields);
+        $nbValues = implode(", ", $nbValues);
+        $create = 'INSERT INTO ' . $this->table . ' (' . $fields . ') VALUES (' . $nbValues . ')';
+        return $this->requete($create, $values);
+    }
+
     public function requete(string $sql, array $attributs = null)
     {
         $this->dbAccess = DataBaseAccess::getInstance();
@@ -43,5 +61,17 @@ class DataBaseModel extends DataBaseAccess
         }else{
             return $this->dbAccess->query($sql);
         }
+    }
+
+    // hydrater un objet en récupérant les données d'un tableau pour les utiliser avec les setters.
+    public function hydrate(array $attributs)
+    {
+        foreach ($attributs as $key => $value) {
+            $setter = 'set_' . $this->table . $key;
+            if(method_exists($this, $setter)){
+                $this->$setter($value);
+            }
+        }
+        return $this;
     }
 }
