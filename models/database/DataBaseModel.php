@@ -49,6 +49,31 @@ class DataBaseModel extends DataBaseAccess
         $create = 'INSERT INTO ' . $this->table . ' (' . $fields . ') VALUES (' . $nbValues . ')';
         return $this->requete($create, $values);
     }
+    
+    public function update(int $tableID, DataBaseModel $dbModel)
+    {
+        $fields = [];
+        $values = [];
+        foreach ($dbModel as $field => $value){
+            if($field !== 'dbAccess' && $field !== 'table' && $value !== null){
+                $fields[] = "$field = ?" ;
+                $values[] = $value;
+            }
+        }
+        $values[] = $tableID;
+        $fields = implode(", ", $fields);
+        $fields = 'UPDATE ' . $this->table . ' SET ' . $fields . ' WHERE ' . $this->table . 'ID = ?';
+        $update = $this->requete($fields, $values);
+        return $update;
+    }
+
+    public function delete(int $id)
+    {
+        $id = [$id];
+        $delete = "DELETE FROM " . $this->table . " WHERE " . $this->table . 'ID = ?';
+        $delete = $this->requete($delete,$id);
+        return $delete;
+    }
 
     public function requete(string $sql, array $attributs = null)
     {
