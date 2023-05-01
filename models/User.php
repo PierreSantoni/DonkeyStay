@@ -1,5 +1,5 @@
 <?php 
-namespace App\models\database;
+namespace App\models;
 
 class User extends DataBaseModel
 {
@@ -15,37 +15,37 @@ class User extends DataBaseModel
         $this->table = 'user';
     }
     
-    public function set_userID($userID)
+    public function set_userID(int $userID)
     {
         $this->userID = $userID;
         return $this;
     }
 
-    public function set_userFirst($userFirst)
+    public function set_userFirst(string $userFirst)
     {
         $this->userFirst = $userFirst;
         return $this;
     }
 
-    public function set_userLast($userLast)
+    public function set_userLast(string $userLast)
     {
         $this->userLast = $userLast;
         return $this;
     }
 
-    public function set_userAdmin($userAdmin)
+    public function set_userAdmin(int $userAdmin)
     {
         $this->userAdmin = $userAdmin;
         return $this;
     }
 
-    public function set_userLogin($userLogin)
+    public function set_userLogin(string $userLogin)
     {
         $this->userLogin = $userLogin;
         return $this;
     }
 
-    public function set_userPass($userPass)
+    public function set_userPass(string $userPass)
     {
         $this->userPass = $userPass;
         return $this;

@@ -31,13 +31,13 @@
                             </a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href=".">
+                            <a class="nav-link" href="list.php">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Reservations</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="." class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <a class="nav-link" href="#" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                                 <i class="fa-solid fa-user-lock"></i>
                                 <p>Connection</p>
                             </a>
