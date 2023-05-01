@@ -17,21 +17,21 @@ $reza = new Reservation;
 ?>
 
 <?php require 'header.php'; ?>
-
+<!--
 <pre>
 ######################################################################
-<p>table User</p>
+<p class="h4 mb-0 mt-3">table User</p>
 <?php print_r ($user->findAll()); ?>
 ######################################################################
-<p>table Hotel</p>
+<p class="h4 mb-0 mt-3">table Hotel</p>
 <?php print_r ($hotel->findAll()); ?>
 ######################################################################
-<p>table Room</p>
+<p class="h4 mb-0 mt-3">table Room</p>
 <?php print_r ($room->findAll()); ?>
 ######################################################################
-<p>table Reservation</p>
+<p class="h4 mb-0 mt-3">table Reservation</p>
 <?php print_r ($reza->findAll()); ?>
 ######################################################################
 </pre>
-
+-->
 <?php require 'footer.php'; ?>
