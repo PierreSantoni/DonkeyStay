@@ -18,8 +18,8 @@
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">About</h6>
                     <p><a class="text-white" href="#">About Us</a></p>
-                    <p><a class="text-white" href="#">Careers</a></p>
-                    <p><a class="text-white" href="/contact.php">Contact Us</a></p>
+                    <p><a class="text-white" href="careers.php">Careers</a></p>
+                    <p><a class="text-white" href="contact.php">Contact Us</a></p>
                 </div>
                 <!-- Grid column -->
                 <hr class="w-100 clearfix d-md-none" />
