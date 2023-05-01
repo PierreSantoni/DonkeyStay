@@ -46,7 +46,7 @@
     <div class="row">
         <div id="About" class="col-md-12 text-center text-md-left">
             <br><br>
-            <h2 class="my-5" ;">About Us</h2>
+            <h2 class="my-5";">About Us</h2>
 
             <p class="mx-md-auto my-5 text-center" style="font-size: 1.2em;">
                 The way we travel and move has changed in the last few years. We no longer want the typical photo that
@@ -77,12 +77,12 @@
             <h2 class="my-5 text-center">Our Rooms</h2>
         </div>
     </div>
-    <div class="rooms">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="/img/deluxeRoom.jpg" class="img-fluid rounded border-3" alt="photo de chambre">
-            </div>
-            <div class="col-md-6">
+<div class="rooms">
+<div class="row">
+<div class="col-md-6">
+    <img src="/img/deluxeRoom.jpg" class="img-fluid rounded border-3" alt="photo de chambre">
+</div>
+<div class="col-md-6">
                 <div class="text-center">
                     <h3>Piece of Mind</h3>
                 </div>

@@ -15,6 +15,8 @@
     <link href="custom.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="javascript" href="/script/script.js">
+    <link rel="stylesheet" href="/Rooms.css">
+    <link rel="stylesheet" href="contact.css">
    
 </head>
 
