@@ -19,7 +19,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        filter: blur(3px);
+        filter: blur(1px);
         z-index: -1;
     }
 
@@ -69,7 +69,7 @@
     </div>
 </div>
 
-</style>
+
 <div style="display: flex; padding: 20px;">
     <div style="flex: 1; padding:9%">
         <h1>Deluxe Room</h1>
