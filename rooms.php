@@ -1,5 +1,6 @@
 <?php include "header.php"
 ?>
+
 <style>
     .bg-image {
         position: relative;
@@ -31,8 +32,6 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         opacity: 0.9;
-
-
     }
 
 
@@ -52,6 +51,11 @@
         filter: invert(1);
     }
 </style>
+
+
+
+
+
 <div class="container-fluid p-0">
     <div class="row no-gutters">
         <div class="col-12 bg-image">
