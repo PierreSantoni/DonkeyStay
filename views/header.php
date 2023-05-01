@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/803e922635.js" crossorigin="anonymous"></script>
 
     <!-- CUSTOM CSS (Bootsrap 5.3.0 Alpha 3 inside)-->
-    <link href="../../core/scss/custom.css" rel="stylesheet">
+    <link href="/core/scss/custom.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         <nav class="navbar navbar-dark bg-donkey-primary fixed-top" aria-label="offcanvas navbar">
             <div class="container-fluid flex-nowrap">
                 <div class="text-center navbar-brand">
-                    <img src="/public/img/donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive" class="img-fluid w-25">
+                    <img src="/core/img/donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive" class="img-fluid w-25">
                 </div>
                 <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav text-center flex-md-row">

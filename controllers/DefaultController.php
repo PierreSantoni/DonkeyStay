@@ -1,7 +1,7 @@
 <?php
 namespace App\controllers;
 
-class DefaultController
+class DefaultController extends Controller
 {
     public function index()
     {
