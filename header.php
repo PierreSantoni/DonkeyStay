@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="custom.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="javascript" href="/script/script.js">
+   
 </head>
 
 <body>
@@ -67,4 +67,3 @@
     </header>
 
     <main style="margin-top:96px;">
-   
