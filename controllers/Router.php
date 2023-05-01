@@ -32,7 +32,12 @@ class Router
                 http_response_code(404);
                 echo "Erreur 404 - La page n'existe pas";
             }else{
-                isset($params[0]) ? $controller->$action($params) : $controller->$action();
+
+                //// call_user_func_array ////
+                /* je ne comprend pas vraiment comment ça marche
+                */
+                isset($params[0]) ? call_user_func_array([$controller,$action],$params) : $controller->$action();
+                //isset($params[0]) ? $controller->$action($params) : $controller->$action();// vielle version
             }
         }
     
