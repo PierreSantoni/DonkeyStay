@@ -1,17 +1,19 @@
 <?php 
-namespace App\models\database;
+namespace App\models;
 
 class Reservation extends DataBaseModel
 {
     protected int $reservationID;
-    protected int $userID;
-    protected int $roomID;
+    protected User $user;
+    protected Room $room;
     protected string $debut;
     protected string $fin;
 
     public function __construct()
     {
         $this->table = 'reservation';
+        $this->user = new User();
+        $this->room = new Room();
     }
 
     public function set_reservationID($reservationID)
@@ -20,15 +22,15 @@ class Reservation extends DataBaseModel
         return $this;
     }
 
-    public function set_userID($userID)
+    public function set_user(User $userID)
     {
-        $this->userID = $userID;
+        $this->user = $userID;
         return $this;
     }
 
-    public function set_roomID($roomID)
+    public function set_roomID(Room $roomID)
     {
-        $this->roomID = $roomID;
+        $this->room = $roomID;
         return $this;
     }
 
@@ -49,14 +51,14 @@ class Reservation extends DataBaseModel
         return $this->reservationID;
     }
 
-    public function get_userID()
+    public function get_user()
     {
-        return $this->userID;
+        return $this->user;
     }
 
-    public function get_roomID()
+    public function get_room()
     {
-        return $this->roomID;
+        return $this->room;
     }
 
     public function get_debut()

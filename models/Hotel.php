@@ -1,5 +1,5 @@
 <?php 
-namespace App\models\database;
+namespace App\models;
 
 class Hotel extends DataBaseModel
 {
@@ -15,37 +15,37 @@ class Hotel extends DataBaseModel
         $this->table = 'hotel';
     }
     
-    public function set_hotelID($hotelID)
+    public function set_hotelID(int $hotelID)
     {
         $this->hotelID = $hotelID;
         return $this;
     }
 
-    public function set_hotelStars($hotelStars)
+    public function set_hotelStars(int $hotelStars)
     {
         $this->hotelStars = $hotelStars;
         return $this;
     }
 
-    public function set_hotelName($hotelName)
+    public function set_hotelName(string $hotelName)
     {
         $this->hotelName = $hotelName;
         return $this;
     }
 
-    public function set_hotelAdress($hotelAdress)
+    public function set_hotelAdress(string $hotelAdress)
     {
         $this->hotelAdress = $hotelAdress;
         return $this;
     }
 
-    public function set_hotelCity($hotelCity)
+    public function set_hotelCity(string $hotelCity)
     {
         $this->hotelCity = $hotelCity;
         return $this;
     }
 
-    public function set_hotelCountry($hotelCountry)
+    public function set_hotelCountry(string $hotelCountry)
     {
         $this->hotelCountry = $hotelCountry;
         return $this;
