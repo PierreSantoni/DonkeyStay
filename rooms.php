@@ -71,7 +71,7 @@
 
 </style>
 <div style="display: flex; padding: 20px;">
-    <div style="flex: 1;">
+    <div style="flex: 1; padding:9%">
         <h1>Deluxe Room</h1>
         <p style="font-size: 1.5rem;">The way we travel and move has changed in the last few years. We no longer want the typical photo that all our contacts post on Instagram. We no longer want to elbow our way through crowded museums. We no longer want to view the city through the mobile lens.
             It's not about travelling, it's about discovering.</p>
