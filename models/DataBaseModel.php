@@ -1,7 +1,7 @@
 <?php 
 namespace App\models;
 
-class DataBaseModel extends DataBaseAccess
+abstract class DataBaseModel extends DataBaseAccess
 {
     protected $table;
 

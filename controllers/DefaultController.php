@@ -1,10 +1,11 @@
 <?php
 namespace App\controllers;
 
-class DefaultController extends Controller
+class DefaultController
 {
     public function index()
     {
-        echo "Bienvenue sur la page d'accueil";
+        $titreProvisoire = "Bienvenue sur la page d'accueil";
+        echo $titreProvisoire;
     }
 }
