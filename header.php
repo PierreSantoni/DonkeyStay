@@ -24,7 +24,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-donkey-primary fixed-top navbar-expand-md">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/index.php">
                     <img src="img/donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive" class="img-fluid w-25">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,13 +45,13 @@
                             </a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#About">
+                            <a class="nav-link" href="/aboutUs.php">
                                 <i class="fa-solid fa-users"></i>
                                 <p>About Us</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/index.php#Rooms">
+                            <a class="nav-link" href="/rooms.php">
                                 <i class="fa-solid fa-bed"></i>
                                 <p>Our Rooms</p>
                             </a>

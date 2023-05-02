@@ -62,7 +62,7 @@
             <div class="text-overlay">
                 <h1>Luxury Hotel Rooms</h1>
                 <p style="font-size: 1.5rem;">
-                    Whether you are here for business or pleasure, our rooms provide a serene and relaxing environment to help you unwind. Experience the epitome of luxury with our top-tier rooms, which feature private balconies, jacuzzis, and other exclusive amenities. From our standard rooms to our most luxurious suites, we have a wide range of options to cater to your needs. Our attentive staff is dedicated to ensuring your stay is nothing short of perfect. Book your stay with us today and experience the ultimate in luxury and comfort.
+                    <strong>You are here for business or pleasure, our rooms provide a serene and relaxing environment to help you unwind. Experience the epitome of luxury with our top-tier rooms, which feature private balconies, jacuzzis, and other exclusive amenities. From our standard rooms to our most luxurious suites, we have a wide range of options to cater to your needs. Our attentive staff is dedicated to ensuring your stay is nothing short of perfect. Book your stay with us today and experience the ultimate in luxury and comfort.</strong>
                 </p>
             </div>
         </div>
