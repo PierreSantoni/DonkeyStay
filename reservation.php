@@ -1,8 +1,6 @@
 <?php include "header.php"
 ?>
-
-
-<div class="container my-5">
+<div class="container my-5" style="background-color: rgb(149, 149, 149);padding:4%">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card shadow-lg border-0 rounded-lg">
