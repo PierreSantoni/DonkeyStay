@@ -1,64 +1,8 @@
 <?php include "header.php"
 ?>
-
-<style>
-    .bg-image {
-        position: relative;
-        height: 100vh;
-        overflow: hidden;
-    }
-
-    .bg-image:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('/img/mainRooms.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        filter: blur(1px);
-        z-index: -1;
-    }
-
-    .bg-image:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0.9;
-    }
-
-
-
-    .text-overlay {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: black;
-        text-align: center;
-
-    }
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        filter: invert(1);
-    }
-</style>
-
-
-
-
-
 <div class="container-fluid p-0">
     <div class="row no-gutters">
-        <div class="col-12 bg-image">
+        <div class="col-12 bg-image1">
             <div class="text-overlay">
                 <h1>Luxury Hotel Rooms</h1>
                 <p style="font-size: 1.5rem;">
