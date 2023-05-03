@@ -30,7 +30,25 @@
                             </a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="<?= '/hotel' ?>">
+                            <a class="nav-link" href="<?= 'user' ?>">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <p>Utilisateurs</p>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="<?= 'hotel' ?>">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <p>Hotels</p>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="<?= 'room' ?>">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <p>Chambres</p>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="<?= 'reservation' ?>">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Reservations</p>
                             </a>
