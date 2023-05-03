@@ -80,7 +80,7 @@
 <div class="rooms">
 <div class="row">
 <div class="col-md-6">
-    <img src="/img/deluxeRoom.jpg" class="img-fluid rounded border-3" alt="photo de chambre">
+    <img src="/Oualid/img/deluxeRoom.jpg" class="img-fluid rounded border-3" alt="photo de chambre">
 </div>
 <div class="col-md-6">
                 <div class="text-center">
