@@ -14,7 +14,7 @@
                     
                 </div>
                 <div class="col-md-6">
-                    <img src="/img/aboutUs.jpg" alt="Careers" class="img-fluid">
+                    <img src="/Oualid/img/aboutUs.jpg" alt="Careers" class="img-fluid">
                 </div>
             </div>
         </div>
