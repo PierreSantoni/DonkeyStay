@@ -20,6 +20,7 @@ CREATE TABLE IF NOT EXISTS `hotel` (
 CREATE TABLE IF NOT EXISTS `room` (
     `roomID` INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     `hotelID` INT NOT NULL,
+    `roomNumber` INT NOT NULL,
     `roomNightPrice` DECIMAL NOT NULL,
     `roomDescription` VARCHAR(255),
     `roomPic` VARCHAR(255),
@@ -30,8 +31,8 @@ CREATE TABLE IF NOT EXISTS `reservation` (
     `reservationID` INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     `userID` INT NOT NULL,
     `roomID` INT NOT NULL,
-    `debut` DATE NOT NULL,
-    `fin` DATE NOT NULL,
+    `reservationDebut` DATE NOT NULL,
+    `reservationFin` DATE NOT NULL,
     CONSTRAINT roomsINhotels
         FOREIGN KEY (userID) REFERENCES user(userID),
         FOREIGN KEY (roomID) REFERENCES room(roomID)

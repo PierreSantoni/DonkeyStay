@@ -4,7 +4,8 @@ namespace App\models;
 class Room extends DataBaseModel
 {
     protected int $roomID;
-    protected Hotel $hotel;
+    protected int $hotelID;
+    protected int $roomNumber;
     protected float $roomNightPrice;
     protected string $roomDescription;
     protected string $roomPic;
@@ -12,7 +13,6 @@ class Room extends DataBaseModel
     public function __construct()
     {
         $this->table = 'room';
-        $this->hotel = new Hotel();
     }
 
     public function set_roomID(int $roomID)
@@ -21,9 +21,15 @@ class Room extends DataBaseModel
         return $this;
     }
     
-    public function set_hotel(hotel $hotelID)
+    public function set_hotel(int $hotelID)
     {
-        $this->hotel = $hotelID;
+        $this->hotelID = $hotelID;
+        return $this;
+    }
+    
+    public function set_roomNumber(int $roomNumber)
+    {
+        $this->roomNumber = $roomNumber;
         return $this;
     }
 
@@ -50,9 +56,14 @@ class Room extends DataBaseModel
         return $this->roomID;
     }
 
-    public function get_hotel()
+    public function get_hotelID()
     {
-        return $this->hotel;
+        return $this->hotelID;
+    }
+
+    public function get_roomNumber()
+    {
+        return $this->roomNumber;
     }
 
     public function get_roomNightPrice()

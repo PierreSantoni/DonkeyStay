@@ -4,45 +4,43 @@ namespace App\models;
 class Reservation extends DataBaseModel
 {
     protected int $reservationID;
-    protected User $user;
-    protected Room $room;
-    protected string $debut;
-    protected string $fin;
+    protected int $userID;
+    protected int $roomID;
+    protected string $reservationDebut;
+    protected string $reservationFin;
 
     public function __construct()
     {
         $this->table = 'reservation';
-        $this->user = new User();
-        $this->room = new Room();
     }
 
-    public function set_reservationID($reservationID)
+    public function set_reservationID(int $reservationID)
     {
         $this->reservationID = $reservationID;
         return $this;
     }
 
-    public function set_user(User $userID)
+    public function set_userID(int $userID)
     {
-        $this->user = $userID;
+        $this->userID = $userID;
         return $this;
     }
 
-    public function set_roomID(Room $roomID)
+    public function set_roomID(int $roomID)
     {
-        $this->room = $roomID;
+        $this->roomID = $roomID;
         return $this;
     }
 
-    public function set_debut($debut)
+    public function set_reservationDebut(string $debut)
     {
-        $this->debut = $debut;
+        $this->reservationDebut = $debut;
         return $this;
     }
 
-    public function set_fin($fin)
+    public function set_reservationFin(string $fin)
     {
-        $this->fin = $fin;
+        $this->reservationFin = $fin;
         return $this;
     }
 
@@ -51,23 +49,23 @@ class Reservation extends DataBaseModel
         return $this->reservationID;
     }
 
-    public function get_user()
+    public function get_userID()
     {
-        return $this->user;
+        return $this->userID;
     }
 
-    public function get_room()
+    public function get_roomID()
     {
-        return $this->room;
+        return $this->roomID;
     }
 
     public function get_debut()
     {
-        return $this->debut;
+        return $this->reservationDebut;
     }
 
     public function get_fin()
     {
-        return $this->fin;
+        return $this->reservationFin;
     }
 }
