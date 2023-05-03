@@ -30,7 +30,7 @@
                             </a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="list.php">
+                            <a class="nav-link" href="<?= '/hotel' ?>">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Reservations</p>
                             </a>
