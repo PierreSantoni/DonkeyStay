@@ -4,19 +4,6 @@
     <div class="row no-gutters">
         <div class="col-12 bg-image1">
             <div class="text-overlay">
-                <div class="wavy">
-                    <span>D</span>
-                    <span>o</span>
-                    <span>n</span>
-                    <span>k</span>
-                    <span>e</span>
-                    <span>y</span>
-                    <span>S</span>
-                    <span>t</span>
-                    <span>a</span>
-                    <span>y</span>
-
-                </div>
                 <h1>Luxury Hotel Rooms</h1>
                 <p style="font-size: 1.5rem;">
                     <strong>You are here for business or pleasure, our rooms provide a serene and relaxing environment to help you unwind. Experience the epitome of luxury with our top-tier rooms, which feature private balconies, jacuzzis, and other exclusive amenities. From our standard rooms to our most luxurious suites, we have a wide range of options to cater to your needs. Our attentive staff is dedicated to ensuring your stay is nothing short of perfect. Book your stay with us today and experience the ultimate in luxury and comfort.</strong>
