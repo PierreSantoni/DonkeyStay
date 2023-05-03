@@ -21,33 +21,40 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-donkey-primary fixed-top" aria-label="offcanvas navbar">
-            <div class="container-fluid flex-nowrap">
-                <div class="text-center navbar-brand">
-                    <img src="/core/img/donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive" class="img-fluid w-25">
-                </div>
-                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-donkey-primary fixed-top navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/Oualid/index.php">
+                    <img src="img/donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive" class="img-fluid w-25">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav text-center flex-md-row">
                         <li class="nav-item me-3">
-                            <a class="nav-link" aria-current="page" href=".">
+                            <a class="nav-link active" aria-current="page" href="/Oualid/index.php">
+                            <a class="nav-link active" aria-current="page" href="/Oualid/index.php">
                                 <i class="fa-solid fa-house"></i>
                                 <p>Home</p>
                             </a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="reservation.php">
+                            <a class="nav-link" href="/Oualid/reservation.php">
+                            <a class="nav-link" href="/Oualid/reservation.php">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Reservations</p>
                             </a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="aboutUs.php">
+                            <a class="nav-link" href="/Oualid/aboutUs.php">
+                            <a class="nav-link" href="/Oualid/aboutUs.php">
                                 <i class="fa-solid fa-users"></i>
                                 <p>About Us</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="rooms.php">
+                            <a class="nav-link" href="/Oualid/rooms.php">
+                            <a class="nav-link" href="/Oualid/rooms.php">
                                 <i class="fa-solid fa-bed"></i>
                                 <p>Our Rooms</p>
                             </a>
