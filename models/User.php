@@ -6,6 +6,7 @@ class User extends DataBaseModel
     protected int $userID;
     protected string $userFirst;
     protected string $userLast;
+    protected string $userEmail;
     protected int $userAdmin = 0;
     protected string $userLogin = "login";
     protected string $userPass = "pass";
@@ -30,6 +31,12 @@ class User extends DataBaseModel
     public function set_userLast(string $userLast)
     {
         $this->userLast = $userLast;
+        return $this;
+    }
+
+    public function set_userEmail(string $userEmail)
+    {
+        $this->userEmail = $userEmail;
         return $this;
     }
 
@@ -64,6 +71,11 @@ class User extends DataBaseModel
     public function get_userLast()
     {
         return $this->userLast;
+    }
+
+    public function get_userEmail()
+    {
+        return $this->userEmail;
     }
 
     public function get_userAdmin()

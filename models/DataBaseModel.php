@@ -104,7 +104,7 @@ abstract class DataBaseModel extends DataBaseAccess
     public function hydrate(array $attributs)
     {
         foreach ($attributs as $key => $value) {
-            $setter = 'set_' . $this->table . $key;
+            $setter = 'set_' . $key;
             if(method_exists($this, $setter)){
                 $this->$setter($value);
             }

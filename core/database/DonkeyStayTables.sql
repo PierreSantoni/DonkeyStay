@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS `user` (
     `userID` INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     `userFirst` VARCHAR(50) NOT NULL,
     `userLast`VARCHAR(50) NOT NULL,
+    `userEmail`VARCHAR(50) NOT NULL,
     `userAdmin` BOOLEAN NOT NULL,
     `userLogin` VARCHAR(255) NOT NULL,
     `userPass`VARCHAR(255) NOT NULL

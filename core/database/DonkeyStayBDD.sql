@@ -1,6 +1,6 @@
 INSERT INTO user VALUES
-(1, 'Admin', 'Zero', 1, 'Login', 'Pass'),
-(2, 'User', 'Zero', 0, 'Login', 'Pass');
+(1, 'Admin', 'Zero', 'admin.zero@donkeystay.com', 1, 'Login', 'Pass'),
+(2, 'User', 'Zero', 'user.zero@donkeystay.com', 0, 'Login', 'Pass');
 
 INSERT INTO hotel VALUES
 (1, 3, "Hotel Zero", "175 Rue des Pyrénnées", "Paris", "FRANCE"),

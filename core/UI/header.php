@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,13 +71,17 @@
                             <div class="bg-light p-4 text-dark rounded-top">
                                 <form action="." method="POST">
                                     <fieldset>
-                                        <label for="newUserLogin" class="w-100">Login*</label>
-                                        <input type="text" name="newUserLogin" id="newUserLogin" class="w-100" placeholder="Login" required>
-                                        <label for="newUserMDP" class="w-100">Password*</label>
-                                        <input type="password" name="newUserMDP" id="newUserMDP" class="w-100" placeholder="Password" required>
-                                        <input type="password" name="newUserMDPtest" id="newUserMDPtest" class="w-100 mt-2" placeholder="Password again" required>
-                                        <label for="newUserEmail" class="w-100">eMail*</label>
-                                        <input type="email" name="newUserEmail" id="newUserEmail" class="w-100" placeholder="eMail" required>
+                                        <label for="userLast" class="w-100">Nom*</label>
+                                        <input type="text" name="userLast" id="userLast" class="w-100" placeholder="Nom" required>
+                                        <label for="userFirst" class="w-100">Prénom*</label>
+                                        <input type="text" name="userFirst" id="userFirst" class="w-100" placeholder="Prénom" required>
+                                        <label for="userLogin" class="w-100">Login*</label>
+                                        <input type="text" name="userLogin" id="userLogin" class="w-100" placeholder="Login" required>
+                                        <label for="userPass" class="w-100">Password*</label>
+                                        <input type="password" name="userPass" id="userPass" class="w-100" placeholder="Password" required>
+                                        <input type="password" name="userPassChecker" id="userPassChecker" class="w-100 mt-2" placeholder="Password again" required>
+                                        <label for="userEmail" class="w-100">eMail*</label>
+                                        <input type="email" name="userEmail" id="userEmail" class="w-100" placeholder="eMail" required>
                                         <input type="submit" class="btn btn-info w-100 mt-4" value="Subscription" name="Subscription">
                                     </fieldset>
                                 </form>
@@ -98,8 +101,8 @@
                                     <fieldset>
                                         <label for="userLogin" class="w-100">Login*</label>
                                         <input type="text" name="userLogin" id="userLogin" class="w-100" placeholder="Login" required>
-                                        <label for="userMDP" class="w-100">Password*</label>
-                                        <input type="password" name="userMDP" id="userMDP" class="w-100" placeholder="Password" required>
+                                        <label for="userPass" class="w-100">Password*</label>
+                                        <input type="password" name="userPass" id="userPass" class="w-100" placeholder="Password" required>
                                         <input type="submit" class="btn btn-info w-100 mt-4" value="Connection" name="Connection">
                                     </fieldset>
                                 </form>
