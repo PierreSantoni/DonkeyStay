@@ -47,3 +47,12 @@
     filter: invert(1);
 }
 
+.wavy{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.wavy span {
+    position: relative;
+    display: inline-block;
+}

@@ -7,6 +7,7 @@
                 <div class="card-header">
                     <h3 class="text-center font-weight-light my-4">LOOK FOR YOUR PARADISE</h3>
                 </div>
+                
                 <div class="card-body">
                     <form id="reservation-form">
                         <div class="form-group">
