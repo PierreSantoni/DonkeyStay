@@ -1,5 +1,5 @@
-<?php require ROOT . '/views/header.php'; ?>
+<?php require ROOT . '/core/UI/header.php'; ?>
 
 <?= $display ?>
 
-<?php require ROOT . '/views/footer.php'; ?> 
+<?php require ROOT . '/core/UI/footer.php'; ?> 
