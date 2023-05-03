@@ -5,7 +5,7 @@
         <div class="col-md-8">
             <div class="card shadow-lg border-0 rounded-lg">
                 <div class="card-header">
-                    <h3 class="text-center font-weight-light my-4">Look for your Paradise</h3>
+                    <h3 class="text-center font-weight-light my-4">LOOK FOR YOUR PARADISE</h3>
                 </div>
                 <div class="card-body">
                     <form id="reservation-form">
