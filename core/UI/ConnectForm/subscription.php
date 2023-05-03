@@ -3,6 +3,11 @@ use App\models\User;
 
 // if(isset($_POST['Subscription']) || isset($_POST['Connection'])){header("Location:/connectForm/redirect.php");}
 
+if(isset($_POST)){
+    session_start();
+    $_SESSION["userID"] = $_POST["userID"];   
+}
+
 if(isset($_POST['Subscription'])){
     echo "<br>INSCRIPTION<br>";
 
