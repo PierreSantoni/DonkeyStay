@@ -35,34 +35,26 @@
                     <ul class="navbar-nav text-center flex-md-row">
 
 
+
                         <li class="nav-item me-4">
                             <a class="nav-link" aria-current="page" href="/Oualid/index.php">
-
                                 <i class="fa-solid fa-house"></i>
                                 <p>Home</p>
                             </a>
                         </li>
-
-
                         <li class="nav-item me-4">
-
                             <a class="nav-link" href="/Oualid/reservation.php">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Reservations</p>
                             </a>
                         </li>
-
-
                         <li class="nav-item me-4">
-
                             <a class="nav-link" href="/Oualid/aboutUs.php">
                                 <i class="fa-solid fa-users"></i>
                                 <p>About Us</p>
                             </a>
                         </li>
-
-                        <li class="nav-item me-4">
-
+                        <li class="nav-item me-4">2
                             <a class="nav-link" href="/Oualid/rooms.php">
                                 <i class="fa-solid fa-bed"></i>
                                 <p>Our Rooms</p>
