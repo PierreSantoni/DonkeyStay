@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS `room` (
     `roomPic` VARCHAR(255),
     CONSTRAINT hotel
         FOREIGN KEY (hotelID) REFERENCES hotel(hotelID)
+        ON DELETE CASCADE
 );
 CREATE TABLE IF NOT EXISTS `reservation` (
     `reservationID` INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
@@ -35,6 +36,8 @@ CREATE TABLE IF NOT EXISTS `reservation` (
     `reservationDebut` DATE NOT NULL,
     `reservationFin` DATE NOT NULL,
     CONSTRAINT roomsINhotels
-        FOREIGN KEY (userID) REFERENCES user(userID),
+        FOREIGN KEY (userID) REFERENCES user(userID)
+        ON DELETE CASCADE,
         FOREIGN KEY (roomID) REFERENCES room(roomID)
+        ON DELETE CASCADE
 );

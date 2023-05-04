@@ -27,7 +27,7 @@ class ReservationController extends Controller
         $rooms = $rooms->findByID($reservation->roomID);
 
         $hotels = new Hotel;
-        $hotels = $hotels->findBy(['hotelID' => $rooms->roomID]);
+        $hotels = $hotels->findBy(['hotelID' => $rooms->hotelID]);
         
         $this->render('reservation/reservationDetails',['reservation' => $reservation,'user' => $users,'room' => $rooms,'hotel' => $hotels]);
     }
