@@ -2,6 +2,7 @@
 namespace App\controllers;
 
 use App\models\Hotel;
+use App\models\Room;
 
 class HotelController extends Controller
 {
@@ -16,7 +17,10 @@ class HotelController extends Controller
     {
         $hotel = new hotel;
         $hotel = $hotel->findByID($hotelID);
+
+        $rooms = new Room;
+        $rooms = $rooms->findBy(['roomID' => $hotelID]);
         
-        $this->render('hotel/hotelDetails',['hotel' => $hotel]);
+        $this->render('hotel/hotelDetails',['hotel' => $hotel, 'rooms' => $rooms]);
     }
 }

@@ -23,7 +23,7 @@ class RoomController extends Controller
         $hotel = $hotel->findByID($room->hotelID);
 
         $reservations = new Reservation;
-        $reservations = $reservations->findBy(['reservationID' => $room->roomID]);
+        $reservations = $reservations->findBy(['reservationID' => $roomID]);
         
         $this->render('room/roomDetails',['room' => $room, 'hotel' => $hotel, 'reservations' => $reservations]);
     }

@@ -1,11 +1,3 @@
-<?php
-
-use App\models\Room;
-
-$rooms = new Room;
-$rooms = $rooms->findBy(['hotelID' => $hotel->hotelID]);
-?>
-
 <div class="container-fluid">
     <div class="row">
         <section>

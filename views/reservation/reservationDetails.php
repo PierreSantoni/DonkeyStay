@@ -11,10 +11,3 @@
         </section>
     </div>
 </div>
-<!--
-<?php
-        echo"<pre>";
-        var_dump($datas);
-        echo"</pre>";
-?>
--->
