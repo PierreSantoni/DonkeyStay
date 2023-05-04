@@ -122,5 +122,6 @@
             </div>
         </nav>
     </header>
-    <main style="margin-top:96px;">
+    <main class="container-fluid" style="margin-top:96px;">
+    
     <?php include 'ConnectForm/subscription.php'; ?>
