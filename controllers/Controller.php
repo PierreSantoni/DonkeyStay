@@ -9,7 +9,7 @@ abstract class Controller
         echo"<pre>";
         var_dump($datas);
         echo"</pre>";
-        die;
+        die();
         */
 
 
