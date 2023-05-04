@@ -1,3 +1,9 @@
+<?php
+
+use App\models\Hotel;
+
+?>
+
 <div class="row">
     <section>
         <h2><?= $hotel->hotelName; ?></h2>
@@ -15,5 +21,15 @@
                 <p>Description : <?= $room->roomDescription; ?></p>
             <?php endforeach; ?>
         </article>
+        <form action="" method="POST">
+            <input type="submit" class="btn btn-danger" name="delete" value="Delete $this (^_^)">
+        </form>
     </section>
 </div>
+
+<?php
+if (isset($_POST["delete"])) {
+    (new Hotel)->delete($hotel->hotelID);
+    header('location:/hotel');
+}
+?>
