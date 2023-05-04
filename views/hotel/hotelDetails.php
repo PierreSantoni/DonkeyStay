@@ -1,19 +1,21 @@
 <?php
 
 use App\models\Hotel;
-
+$stars = $hotel->hotelStars;
 ?>
 
 <div class="row">
     <section>
         <h2><?= $hotel->hotelName; ?></h2>
+            <?php for($i = 0; $i < $stars; $i++): ?>
+                <i class="fa-solid fa-star"></i>
+            <?php endfor; ?>
         <article>
-            <p class="mb-0">ID : <?= $hotel->hotelID; ?></p>
-            <p class="mb-0">Hotel <?= $hotel->hotelStars; ?> étoiles</p>
+            <p class="mb-0">Hotel <?= $stars; ?> étoiles</p>
             <p class="mb-0"><?= $hotel->hotelName . ", " . $hotel->hotelAdress . ", " . $hotel->hotelCity . ", " . $hotel->hotelCountry; ?></p>
         </article>
         <br>
-        <h4>Dispose des chambres :</h4>
+        <h4>Dispose des chambres suivantes :</h4>
         <article>
             <?php foreach ($rooms as $room) : ?>
                 <p class="mb-0">Numéro de chambre : <?= $room->roomNumber; ?></p>
@@ -22,7 +24,9 @@ use App\models\Hotel;
             <?php endforeach; ?>
         </article>
         <form action="" method="POST">
-            <input type="submit" class="btn btn-danger" name="delete" value="Delete $this (^_^)">
+            <button type="submite" class="btn btn-danger" name="delete">
+                Delete $this <i class="fa-solid fa-circle-xmark"></i>
+            </button>
         </form>
     </section>
 </div>

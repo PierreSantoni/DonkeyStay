@@ -16,9 +16,11 @@ use App\models\User;
             <p>Reservation N°<?= $reservation->reservationID; ?> du <?= $reservation->reservationDebut; ?> au <?= $reservation->reservationFin; ?></p>
         <?php endforeach; ?>
     </article>
-        <form action="" method="POST">
-            <input type="submit" class="btn btn-danger" name="delete" value="Delete $this (^_^)">
-        </form>
+    <form action="" method="POST">
+        <button type="submite" class="btn btn-danger" name="delete">
+            Delete $this <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+    </form>
 </div>
 
 <?php
