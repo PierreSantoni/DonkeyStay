@@ -12,11 +12,11 @@ class RoomController extends Controller
         $this->render('room/index',['rooms' => $rooms]);
     }
 
-    public function roomProfil(int $roomID)
+    public function roomDetails(int $roomID)
     {
         $room = new Room;
         $room = $room->findByID($roomID);
         
-        $this->render('room/profil',['room' => $room]);
+        $this->render('room/roomDetails',['room' => $room]);
     }
 }

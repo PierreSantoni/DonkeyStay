@@ -35,6 +35,6 @@ if(isset($_POST['Subscription'])){
     var_dump($_POST);
     echo "</pre>";
 
-}else{
+}/*else{
     echo "ERROR";
-}
+}*/

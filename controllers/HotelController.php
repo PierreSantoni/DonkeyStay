@@ -12,11 +12,11 @@ class HotelController extends Controller
         $this->render('hotel/index',['hotels' => $hotels]);
     }
 
-    public function hotelProfil(int $hotelID)
+    public function hotelDetails(int $hotelID)
     {
         $hotel = new hotel;
         $hotel = $hotel->findByID($hotelID);
         
-        $this->render('hotel/profil',['hotel' => $hotel]);
+        $this->render('hotel/hotelDetails',['hotel' => $hotel]);
     }
 }

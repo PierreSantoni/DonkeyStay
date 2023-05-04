@@ -19,7 +19,9 @@
         <nav class="navbar navbar-dark bg-donkey-primary fixed-top" aria-label="offcanvas navbar">
             <div class="container-fluid flex-nowrap">
                 <div class="text-center navbar-brand">
-                    <img src="/core/img/donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive" class="img-fluid w-25">
+                    <a href="/">
+                        <img src="/core/img/donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive" class="img-fluid w-25">
+                    </a>
                 </div>
                 <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav text-center flex-md-row">
@@ -30,25 +32,25 @@
                             </a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="<?= 'user' ?>">
+                            <a class="nav-link" href="<?= '/user' ?>">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Utilisateurs</p>
                             </a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="<?= 'hotel' ?>">
+                            <a class="nav-link" href="<?= '/hotel' ?>">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Hotels</p>
                             </a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="<?= 'room' ?>">
+                            <a class="nav-link" href="<?= '/room' ?>">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Chambres</p>
                             </a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="<?= 'reservation' ?>">
+                            <a class="nav-link" href="<?= '/reservation' ?>">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Reservations</p>
                             </a>

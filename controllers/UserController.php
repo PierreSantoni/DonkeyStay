@@ -17,6 +17,6 @@ class UserController extends Controller
         $user = new User;
         $user = $user->findByID($userID);
         
-        $this->render('user/profil',['user' => $user]);
+        $this->render('user/userProfil',['user' => $user]);
     }
 }
