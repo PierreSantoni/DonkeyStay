@@ -14,7 +14,9 @@ use App\models\Reservation;
             <p class="mb-0">Réservé du <?= $reservation->reservationDebut ?> au <?= $reservation->reservationFin ?></p>
         </article>
         <form action="" method="POST">
-            <input type="submit" class="btn btn-danger" name="delete" value="Delete $this (^_^)">
+            <button type="submite" class="btn btn-danger" name="delete">
+                Delete $this <i class="fa-solid fa-circle-xmark"></i>
+            </button>
         </form>
     </section>
 </div>

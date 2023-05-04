@@ -19,7 +19,9 @@ use App\models\Room;
         <?php endforeach; ?>
     </article>
         <form action="" method="POST">
-            <input type="submit" class="btn btn-danger" name="delete" value="Delete $this (^_^)">
+            <button type="submite" class="btn btn-danger" name="delete">
+                Delete $this <i class="fa-solid fa-circle-xmark"></i>
+            </button>
         </form>
 </div>
 

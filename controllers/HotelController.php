@@ -19,7 +19,7 @@ class HotelController extends Controller
         $hotel = $hotel->findByID($hotelID);
 
         $rooms = new Room;
-        $rooms = $rooms->findBy(['roomID' => $hotelID]);
+        $rooms = $rooms->findBy(['hotelID' => $hotelID]);
         
         $this->render('hotel/hotelDetails',['hotel' => $hotel, 'rooms' => $rooms]);
     }
