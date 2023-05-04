@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DonkeyStay</title>
+    <link rel="shortcut icon" href="/core/img/favicon.ico" type="image/x-icon">
 
     <!-- FONTAWESOME JS -->
     <script src="https://kit.fontawesome.com/803e922635.js" crossorigin="anonymous"></script>
 
     <!-- CUSTOM CSS (Bootsrap 5.3.0 Alpha 3 inside)-->
     <link href="/core/scss/custom.css" rel="stylesheet">
+    <link href="/Oualid/style.css" rel="stylesheet">
+    <link href="/Oualid/Rooms.css" rel="stylesheet">
+    <link href="/Oualid/contact.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -25,37 +30,55 @@
                 </div>
                 <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav text-center flex-md-row">
-                        <li class="nav-item me-3">
+                        <li class="nav-item me-4">
                             <a class="nav-link active" aria-current="page" href="/">
                                 <i class="fa-solid fa-house"></i>
                                 <p>Home</p>
                             </a>
                         </li>
-                        <li class="nav-item me-3">
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="/Oualid/reservation.php">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <p>Reservations</p>
+                            </a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="/Oualid/aboutUs.php">
+                                <i class="fa-solid fa-users"></i>
+                                <p>About Us</p>
+                            </a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="/Oualid/rooms.php">
+                                <i class="fa-solid fa-bed"></i>
+                                <p>Our Rooms</p>
+                            </a>
+                        </li>
+                        <li class="nav-item me-4">
                             <a class="nav-link" href="<?= '/user' ?>">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Utilisateurs</p>
                             </a>
                         </li>
-                        <li class="nav-item me-3">
+                        <li class="nav-item me-4">
                             <a class="nav-link" href="<?= '/hotel' ?>">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Hotels</p>
                             </a>
                         </li>
-                        <li class="nav-item me-3">
+                        <li class="nav-item me-4">
                             <a class="nav-link" href="<?= '/room' ?>">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Chambres</p>
                             </a>
                         </li>
-                        <li class="nav-item me-3">
+                        <li class="nav-item me-4">
                             <a class="nav-link" href="<?= '/reservation' ?>">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Reservations</p>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item me-4">
                             <a class="nav-link" href="#" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                                 <i class="fa-solid fa-user-lock"></i>
                                 <p>Connection</p>
@@ -63,6 +86,10 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- Ne pas détruire !!!! -->
+                <!-- Menu de connexion -->
+
                 <div class="offcanvas offcanvas-end bg-donkey-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Connection</h5>
