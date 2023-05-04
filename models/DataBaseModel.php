@@ -32,7 +32,8 @@ abstract class DataBaseModel extends DataBaseAccess
         return $this->requete("SELECT * FROM {$this->table} WHERE {$this->table}id = $id")->fetch();
     }
 
-    /* Useless mais cool
+    /*
+    //// Useless mais cool ////
     public function findRezaDetails(int $userID = null)
     {
         $rezaDetails = "SELECT * FROM reservation JOIN user ON reservation.userID = user.userID JOIN room ON reservation.roomID = room.roomID JOIN hotel ON room.hotelID = hotel.hotelID";
@@ -44,12 +45,12 @@ abstract class DataBaseModel extends DataBaseAccess
     }
     */
 
-    public function create(DataBaseModel $dbModel)
+    public function create()
     {
         $fields = [];
         $nbValues = [];
         $values = [];
-        foreach ($dbModel as $field => $value) {
+        foreach ($this as $field => $value) {
             if($field !== 'dbAccess' && $field !== 'table' && $value !== null){
                 $fields[] = "`$field`";
                 $nbValues[] = "?";
@@ -62,19 +63,20 @@ abstract class DataBaseModel extends DataBaseAccess
         return $this->requete($create, $values);
     }
     
-    public function update(int $tableID, DataBaseModel $dbModel)
+    public function update(int $tableID)
     {
         $fields = [];
         $values = [];
-        foreach ($dbModel as $field => $value){
+        foreach ($this as $field => $value){
             if($field !== 'dbAccess' && $field !== 'table' && $value !== null){
                 $fields[] = "$field = ?" ;
                 $values[] = $value;
             }
         }
-        $values[] = $tableID;
+        $tableID = $this->table.'ID';
+        $values[] = $this->$tableID;
         $fields = implode(", ", $fields);
-        $fields = 'UPDATE ' . $this->table . ' SET ' . $fields . ' WHERE ' . $this->table . 'ID = ?';
+        $fields = 'UPDATE ' . $this->table . ' SET ' . $fields . ' WHERE ' . $tableID . ' = ?';
         $update = $this->requete($fields, $values);
         return $update;
     }
@@ -100,8 +102,8 @@ abstract class DataBaseModel extends DataBaseAccess
         }
     }
 
-    // hydrater un objet en récupérant les données d'un tableau pour les utiliser avec les setters.
-    public function hydrate(array $attributs)
+    // hydrater un objet en récupérant les données d'un tableau ou d'un objet pour les utiliser avec les setters.
+    public function hydrate($attributs)
     {
         foreach ($attributs as $key => $value) {
             $setter = 'set_' . $key;

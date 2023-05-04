@@ -26,7 +26,7 @@
                 <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav text-center flex-md-row">
                         <li class="nav-item me-3">
-                            <a class="nav-link active" aria-current="page" href=".">
+                            <a class="nav-link active" aria-current="page" href="/">
                                 <i class="fa-solid fa-house"></i>
                                 <p>Home</p>
                             </a>
