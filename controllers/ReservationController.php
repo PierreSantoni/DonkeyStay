@@ -21,13 +21,13 @@ class ReservationController extends Controller
         $reservation = $reservation->findByID($reservationID);
 
         $users = new User;
-        $users = $users->findBy(['userID' => $reservation->userID]);
+        $users = $users->findByID($reservation->userID);
 
         $rooms = new Room;
-        $rooms = $rooms->findBy(['roomID' => $reservation->roomID]);
+        $rooms = $rooms->findByID($reservation->roomID);
 
         $hotels = new Hotel;
-        $hotels = $hotels->findBy(['hotelID' => $rooms[0]->roomID]);
+        $hotels = $hotels->findBy(['hotelID' => $rooms->roomID]);
         
         $this->render('reservation/reservationDetails',['reservation' => $reservation,'user' => $users,'room' => $rooms,'hotel' => $hotels]);
     }

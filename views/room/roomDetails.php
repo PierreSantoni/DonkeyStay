@@ -1,18 +1,18 @@
 <div class="container-fluid">
-    <h4>Chambres Disponible</h4>
+    <h5>Chambre N°<?= $room->roomNumber; ?> de l'<?= $hotel->hotelName; ?></h5>
     <div class="row">
-        <?php foreach ($rooms as $key => $value) : ?>
-
         <article>
-            <h5>
-                <a href="room/roomDetails/<?= $value->roomID; ?>">
-                    Chambre N°<?= $value->roomID; ?>
-                </a>
-            </h5>
-            <p><?= $value->roomNightPrice; ?> € la nuit</p>
-            <p><?= $value->roomDescription; ?></p>
+            <h4>Détails de la Chambre</h4>
+            <p class="mb-0">Tarif : <?= $room->roomNightPrice; ?> € la nuit</p>
+            <p>Description :<br><?= $room->roomDescription; ?></p>
         </article>
-
-        <?php endforeach; ?>
+        <article>
+            <h4>Réservation déjà enregistrées pour cette chambre</h4>
+            <?php foreach($reservations as $reservation): ?>
+            <p class="mb-0">Reservation N°<?= $reservation->reservationID; ?></p>
+            <p class="mb-0">Du <?= $reservation->reservationDebut; ?></p>
+            <p class="mb-0">Au <?= $reservation->reservationFin; ?></p>
+            <?php endforeach; ?>
+        </article>
     </div>
 </div>
