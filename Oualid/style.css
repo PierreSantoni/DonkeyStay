@@ -1,18 +1,19 @@
-body{
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-.home-page{
+.home-page {
     margin: 0;
-        padding: 0;
-        background-image: url(/Oualid/img/main.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        min-height: 100vh;
+    padding: 0;
+    background-image: url(/Oualid/img/main.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
 }
+
 .search-bar {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
@@ -89,67 +90,3 @@ label {
     margin-left: 10px;
     border-radius: 5px 5px 5px 0;
 }
-
-/*rooms*/
-
-
-.rooms{
-    padding: 90px;
-}
-
-.about-rooms{
-    margin: 30px;
-}
-
-
-
-
-
-
-
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    bottom: 0;
-    color: #fff;
-    padding: 10px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-}
-
-.carousel-caption h1,
-.carousel-caption p {
-    margin: 0;
-}
-
-.carousel-inner>.item {
-    display: inline-block;
-    margin-right: 20px;
-    vertical-align: top;
-    width: 50%;
-}
-
-.carousel-inner>.item:nth-child(2n) {
-    margin-right: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

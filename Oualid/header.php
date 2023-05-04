@@ -54,7 +54,7 @@
                                 <p>About Us</p>
                             </a>
                         </li>
-                        <li class="nav-item me-4">2
+                        <li class="nav-item me-4">
                             <a class="nav-link" href="/Oualid/rooms.php">
                                 <i class="fa-solid fa-bed"></i>
                                 <p>Our Rooms</p>
