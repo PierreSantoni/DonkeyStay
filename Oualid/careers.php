@@ -1,5 +1,4 @@
-<?php include "header.php"
-?>
+<?php include "../core/UI/header.php" ?>
 
 
 <body style="background-color: #969696;">
@@ -112,5 +111,4 @@
     </section>
 
 
-    <?php include "footer.php"
-    ?>
+    <?php include "../core/UI/footer.php" ?>
