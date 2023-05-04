@@ -1,6 +1,7 @@
 <?php
 namespace App\controllers;
 
+use App\models\Reservation;
 use App\models\User;
 
 class UserController extends Controller
@@ -16,7 +17,10 @@ class UserController extends Controller
     {
         $user = new User;
         $user = $user->findByID($userID);
+
+        $reservations = new Reservation;
+        $reservations = $reservations->findBy(['reservationID' => $userID]);
         
-        $this->render('user/profil',['user' => $user]);
+        $this->render('user/userProfil',['user' => $user, 'reservations' => $reservations]);
     }
 }

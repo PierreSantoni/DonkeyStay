@@ -1,13 +1,10 @@
 <?php
 namespace App\controllers;
 
-use App\controllers\UserController;
-
 class Router
 {
-    public function start()
+    public function __invoke()
     {
-    
         //// URL = ROOT/controller/method/parametres[] ////
         $uri = $_SERVER['REQUEST_URI'];
 
@@ -40,6 +37,5 @@ class Router
                 //isset($params[0]) ? $controller->$action($params) : $controller->$action();// vielle version
             }
         }
-    
     }
 }

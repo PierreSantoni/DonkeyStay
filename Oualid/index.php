@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include '../core/UI/header.php'; ?>
 
 
 
@@ -98,4 +98,4 @@
     </div>
 </div>
 
-<?php include 'footer.php'; ?>
+<?php include '../core/UI/footer.php'; ?>

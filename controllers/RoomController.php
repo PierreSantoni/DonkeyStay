@@ -2,6 +2,8 @@
 namespace App\controllers;
 
 use App\models\Room;
+use App\models\Hotel;
+use App\models\Reservation;
 
 class RoomController extends Controller
 {
@@ -12,11 +14,17 @@ class RoomController extends Controller
         $this->render('room/index',['rooms' => $rooms]);
     }
 
-    public function roomProfil(int $roomID)
+    public function roomDetails(int $roomID)
     {
         $room = new Room;
         $room = $room->findByID($roomID);
+
+        $hotel = new Hotel;
+        $hotel = $hotel->findByID($room->hotelID);
+
+        $reservations = new Reservation;
+        $reservations = $reservations->findBy(['reservationID' => $roomID]);
         
-        $this->render('room/profil',['room' => $room]);
+        $this->render('room/roomDetails',['room' => $room, 'hotel' => $hotel, 'reservations' => $reservations]);
     }
 }

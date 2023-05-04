@@ -5,6 +5,14 @@ abstract class Controller
 {
     public function render(string $fichier, array $datas = [], string $index = "index")
     {
+        /*
+        echo"<pre>";
+        var_dump($datas);
+        echo"</pre>";
+        die();
+        */
+
+
         //// Fonction extract() ////
         /*
         *   extrait les données de $data['key' => 'value']

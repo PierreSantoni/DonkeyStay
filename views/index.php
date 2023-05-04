@@ -2,4 +2,4 @@
 
 <?= $display ?>
 
-<?php require ROOT . '/core/UI/footer.php'; ?> 
+<?php require ROOT . '/core/UI/footer.php'; ?>

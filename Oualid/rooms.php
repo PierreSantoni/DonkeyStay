@@ -1,5 +1,4 @@
-<?php include "header.php"
-?>
+<?php include "../core/UI/header.php" ?>
 <div class="container-fluid p-0">
     <div class="row no-gutters">
         <div class="col-12 bg-image1">
@@ -60,5 +59,4 @@
     </div>
 </div>
 
-<?php include "footer.php"
-?>
+<?php include "../core/UI/footer.php" ?>

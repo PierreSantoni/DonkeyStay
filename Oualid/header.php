@@ -23,15 +23,14 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-donkey-primary fixed-top navbar-expand-md">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/Oualid/index.php">
-                    <img src="img/donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive" class="img-fluid w-25">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-donkey-primary fixed-top navbar-expand-md" aria-label="offcanvas navbar">
+            <div class="container-fluid flex-nowrap">
+                <div class="text-center navbar-brand">
+                    <a href="/Oualid/index.php">
+                        <img src="/core/img/donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive" class="img-fluid w-25">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav text-center flex-md-row">
 
 
@@ -60,7 +59,7 @@
                                 <p>Our Rooms</p>
                             </a>
                         </li>
-                        <li class="nav-item me-4">
+                        <li class="nav-item">
                             <a class="nav-link" href="#" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                                 <i class="fa-solid fa-user-lock"></i>
                                 <p>Connection</p>
@@ -71,6 +70,7 @@
 
                 <!-- Ne pas détruire !!!! -->
                 <!-- Menu de connexion -->
+                
                 <div class="offcanvas offcanvas-end bg-donkey-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Connection</h5>
@@ -79,16 +79,20 @@
                     <div class="offcanvas-body">
                         <div class="collapse" id="navbarToggleExternalContent1">
                             <div class="bg-light p-4 text-dark rounded-top">
-                                <form action="." method="GET">
+                                <form action="." method="POST">
                                     <fieldset>
-                                        <label for="newUserLogin" class="w-100">Login*</label>
-                                        <input type="text" name="newUserLogin" id="newUserLogin" class="w-100" placeholder="Login" require>
-                                        <label for="newUserMDP" class="w-100">Password*</label>
-                                        <input type="password" name="newUserMDP" id="newUserMDP" class="w-100" placeholder="Password" require>
-                                        <input type="password" name="newUserMDPtest" id="newUserMDPtest" class="w-100 mt-2" placeholder="Password again" require>
-                                        <label for="newUserEmail" class="w-100">eMail*</label>
-                                        <input type="email" name="newUserEmail" id="newUserEmail" class="w-100" placeholder="eMail" require>
-                                        <input type="submit" class="btn btn-info w-100 mt-4" value="Subscription">
+                                        <label for="userLast" class="w-100">Nom*</label>
+                                        <input type="text" name="userLast" id="userLast" class="w-100" placeholder="Nom" required>
+                                        <label for="userFirst" class="w-100">Prénom*</label>
+                                        <input type="text" name="userFirst" id="userFirst" class="w-100" placeholder="Prénom" required>
+                                        <label for="userLogin" class="w-100">Login*</label>
+                                        <input type="text" name="userLogin" id="userLogin" class="w-100" placeholder="Login" required>
+                                        <label for="userPass" class="w-100">Password*</label>
+                                        <input type="password" name="userPass" id="userPass" class="w-100" placeholder="Password" required>
+                                        <input type="password" name="userPassChecker" id="userPassChecker" class="w-100 mt-2" placeholder="Password again" required>
+                                        <label for="userEmail" class="w-100">eMail*</label>
+                                        <input type="email" name="userEmail" id="userEmail" class="w-100" placeholder="eMail" required>
+                                        <input type="submit" class="btn btn-info w-100 mt-4" value="Subscription" name="Subscription">
                                     </fieldset>
                                 </form>
                             </div>
@@ -103,13 +107,13 @@
                         <br>
                         <div class="collapse" id="navbarToggleExternalContent2">
                             <div class="bg-light p-4 text-dark rounded-top">
-                                <form action="." method="GET">
+                                <form action="." method="POST">
                                     <fieldset>
                                         <label for="userLogin" class="w-100">Login*</label>
-                                        <input type="text" name="userLogin" id="userLogin" class="w-100" placeholder="Login" require>
-                                        <label for="userMDP" class="w-100">Password*</label>
-                                        <input type="password" name="userMDP" id="userMDP" class="w-100" placeholder="Password" require>
-                                        <input type="submit" class="btn btn-info w-100 mt-4" value="Connection">
+                                        <input type="text" name="userLogin" id="userLogin" class="w-100" placeholder="Login" required>
+                                        <label for="userPass" class="w-100">Password*</label>
+                                        <input type="password" name="userPass" id="userPass" class="w-100" placeholder="Password" required>
+                                        <input type="submit" class="btn btn-info w-100 mt-4" value="Connection" name="Connection">
                                     </fieldset>
                                 </form>
                             </div>
@@ -123,8 +127,7 @@
                         </nav>
                     </div>
                 </div>
-                <!-- Fin Menu de connexion -->
             </div>
         </nav>
     </header>
-    <main style="margin-top:96px;">
+    <main class="container-fluid" style="margin-top:96px;">

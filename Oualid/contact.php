@@ -1,5 +1,4 @@
-<?php include "header.php"
-?>
+<?php include "../core/UI/header.php" ?>
 
     <div class="container">
         <div class="row">
@@ -49,5 +48,4 @@
 
 
 
-<?php include "footer.php"
-?>
+<?php include "../core/UI/footer.php" ?>
