@@ -3,10 +3,10 @@
         <div class="row">
             <div class="col-md-6 mx-auto">
                 <div class="search-bar">
-                    <form>
+                    <form action="/search/index/<?= $_POST["hotel"]."/"; ?>" method="POST">
                         <div class="form-group">
                             <label for="hotel">Hotel Name or Location</label>
-                            <input type="text" class="form-control" id="hotel" placeholder="Enter hotel name or location">
+                            <input type="text" class="form-control" id="hotel" name="hotel" placeholder="Enter hotel name or location">
                         </div>
                         <div class="form-group">
                             <label for="arrivee">Arrival Date</label>
@@ -29,7 +29,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Search</button>
+                        <input type="submit" class="btn btn-primary btn-block" value="Search">
                     </form>
                 </div>
             </div>
