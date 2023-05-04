@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-6 mx-auto">
                 <div class="search-bar">
-                    <form action="/search/index/<?= $_POST["hotel"]."/"; ?>" method="POST">
+                    <form action="/search" method="POST">
                         <div class="form-group">
                             <label for="hotel">Hotel Name or Location</label>
                             <input type="text" class="form-control" id="hotel" name="hotel" placeholder="Enter hotel name or location">

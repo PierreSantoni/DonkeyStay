@@ -14,6 +14,19 @@ class Reservation extends DataBaseModel
         $this->table = 'reservation';
     }
 
+    /*
+    //// Useless mais cool ////
+    public function findRezaDetails(int $userID = null)
+    {
+        $rezaDetails = "SELECT * FROM reservation JOIN user ON reservation.userID = user.userID JOIN room ON reservation.roomID = room.roomID JOIN hotel ON room.hotelID = hotel.hotelID";
+        if(!is_null($userID)){
+            $rezaDetails .= " WHERE reservation.userID = ".$userID;
+            return $this->requete($rezaDetails)->fetch();
+        }
+        return $this->requete($rezaDetails)->fetchAll();
+    }
+    */
+
     public function set_reservationID(int $reservationID)
     {
         $this->reservationID = $reservationID;

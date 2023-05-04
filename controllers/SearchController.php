@@ -5,13 +5,25 @@ use App\models\Hotel;
 
 class SearchController extends Controller
 {
-    public function index(array $search)
-    {
-        $hotelClass = new Hotel;
-        $hotel = $hotelClass->findBy(['hotelName' => $search]);
+    public function index()
+    {   
+        var_dump($_POST);
+        $list = new Hotel;
+        $hotel = null;
 
-        var_dump($hotel);
+        if(!$hotel){
+            $hotel = $list->findBy(["hotelName" => $_POST["hotel"]]);
+        }
+        if(!$hotel){
+            $hotel = $list->findBy(["hotelCountry" => $_POST["hotel"]]);
+        }
+        if(!$hotel){
+            $hotel = $list->findBy(["hotelCity" => $_POST["hotel"]]);
+        }
+        if(!$hotel){
+            $hotel = $list->findBy(["hotelAdress" => $_POST["hotel"]]);
+        }
 
-        $this->render('default/search',['hotel' => $hotel]);
+        $this->render('/default/search',['result' => $hotel]);
     }
 }
