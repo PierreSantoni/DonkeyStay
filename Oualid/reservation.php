@@ -1,5 +1,5 @@
-<?php include "header.php"
-?>
+<?php require '../core/UI/header.php'; ?>
+
 <div class="container my-5" style="background-color: rgb(149, 149, 149);padding:4%">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -45,5 +45,5 @@
     </div>
 </div>
 
-<?php include "footer.php"
+<?php include "../core/UI/footer.php"
 ?>

@@ -1,5 +1,4 @@
-<?php include "header.php"
-?>
+<?php include "../core/UI/header.php" ?>
 
 <section class="about-us-section">
     <div class="container">
@@ -157,5 +156,4 @@
 
 
 
-<?php include "footer.php"
-?>
+<?php include "../core/UI/footer.php" ?>
