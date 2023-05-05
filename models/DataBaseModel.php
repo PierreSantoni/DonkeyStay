@@ -66,7 +66,7 @@ abstract class DataBaseModel extends DataBaseAccess
         $tableID = $this->table.'ID';
         $values[] = $this->$tableID;
         $fields = implode(", ", $fields);
-        $fields = 'UPDATE ' . $this->table . ' SET ' . $fields . ' WHERE ' . $this->table . 'ID = ?';
+        $fields = 'UPDATE ' . $this->table . ' SET ' . $fields . ' WHERE ' . $tableID . ' = ?';
         $update = $this->requete($fields, $values);
         return $update;
     }

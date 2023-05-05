@@ -29,6 +29,6 @@ use App\models\Room;
 <?php
 if (isset($_POST["delete"])) {
     (new Room)->delete($hotel->hotelID);
-    header('location:/hotel');
+    header('location:/room');
 }
 ?>

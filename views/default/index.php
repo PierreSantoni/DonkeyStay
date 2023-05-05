@@ -16,7 +16,7 @@
                             <label for="depart">Departure Date</label>
                             <input type="date" name="reservationFin" class="form-control" id="depart" placeholder="Enter departure date" min="<?php echo date('Y-m-d'); ?>">
                         </div>
-                        <div class="form-group d-none">
+                        <div class="form-group">
                             <label for="personnes">Number of Guests</label>
                             <div class="row">
                                 <div class="col-md-6">
