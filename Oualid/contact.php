@@ -21,12 +21,12 @@
                         <label for="message">Message</label>
                         <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Send</button>
+                    <button type="submit" class="btn btn-primary btn-block w-100">Send</button>
                 </form>
             </div>
             <div class="col-md-6 map-container" style="padding: 0 50px;">
                 <h1 class="text-center">Our Location</h1>
-                <p class="text-center" style="font-size: 18px;">197 Rue des Pyrénées, 75020 Paris</p>
+                <p class="text-center" style="font-size: 18px;">175 Rue des Pyrénées, 75020 Paris</p>
                 <div class="map-responsive">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.539143397389!2d2.392200215702789!3d48.87112257928768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1a907c62d7%3A0x479bc870e1b4111c!2s197%20Rue%20des%20Pyr%C3%A9n%C3%A9es%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1650265562775!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>

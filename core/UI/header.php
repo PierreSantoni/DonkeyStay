@@ -257,6 +257,6 @@
 
 
     </header>
-    <main class="container-fluid p-0" style="margin-top:96px;">
+    <main class="container-fluid p-0" style="margin-top:96px;min-height: calc(100vh - 494px);">
 
         <?php include 'ConnectForm/subscription.php'; ?>
