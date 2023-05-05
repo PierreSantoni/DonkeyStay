@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row p-5">
     <h4>Chambres Disponible</h4>
     <?php foreach ($rooms as $key => $value) : ?>
         <h5>

@@ -4,7 +4,7 @@ use App\models\Reservation;
 
 ?>
 
-<div class="row">
+<div class="row p-5">
     <section>
         <h2>Détails de la réservation N°<?= $reservation->reservationID; ?></h2>
         <article>

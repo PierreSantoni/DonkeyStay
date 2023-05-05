@@ -3,7 +3,8 @@
 use App\models\Room;
 
 ?>
-<div class="row">
+
+<div class="row p-5">
     <h5>Chambre N°<?= $room->roomNumber; ?> de l'<?= $hotel->hotelName; ?></h5>
     <article>
         <h4>Détails de la Chambre</h4>

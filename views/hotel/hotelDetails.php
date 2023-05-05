@@ -4,7 +4,7 @@ use App\models\Hotel;
 $stars = $hotel->hotelStars;
 ?>
 
-<div class="row">
+<div class="row p-5">
     <section>
         <h2><?= $hotel->hotelName; ?></h2>
             <?php for($i = 0; $i < $stars; $i++): ?>

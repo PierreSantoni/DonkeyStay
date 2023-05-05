@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="row p-5">
     <h4>Liste des Réservations</h4>
     <div class="row">
         <?php foreach ($reservations as $key => $value) : ?>

@@ -4,7 +4,7 @@ use App\models\User;
 
 ?>
 
-<div class="row">
+<div class="row p-5">
     <article>
         <h2>Profil de : <?= $user->userFirst . " " . $user->userLast; ?></h2>
         <p class="mb-0">ID : <?= $user->userID; ?></p>
