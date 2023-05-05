@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row p-5">
     <h4>Utilisateurs enregistrés</h4>
     <?php foreach ($users as $key => $value) : ?>
         <article>

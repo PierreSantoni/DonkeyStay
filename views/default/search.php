@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row p-5">
     <article>
         <h2>Résultat de la recherche</h2>
         <?php if (!$result) : ?>
@@ -14,3 +14,15 @@
         <a href="/" class="btn btn-info">Retour a l'accueil</a>
     </article>
 </div>
+<pre>
+    <?php var_dump($_POST); ?>
+    <?php
+    if($_POST["reservationDebut"] < $_POST["reservationFin"]){
+        echo " Début plus petit que Fin";
+    }elseif($_POST["reservationDebut"] > $_POST["reservationFin"]){
+        echo "Fin plus petit que Début";
+    }else{
+        echo "Egalité !!";
+    }
+    ?>
+</pre>

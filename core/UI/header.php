@@ -55,30 +55,6 @@
                             </a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link" href="<?= '/user' ?>">
-                                <i class="fa-solid fa-poo"></i>
-                                <p>Utilisateurs</p>
-                            </a>
-                        </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link" href="<?= '/hotel' ?>">
-                                <i class="fa-solid fa-poo"></i>
-                                <p>Hotels</p>
-                            </a>
-                        </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link" href="<?= '/room' ?>">
-                                <i class="fa-solid fa-poo"></i>
-                                <p>Chambres</p>
-                            </a>
-                        </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link" href="<?= '/reservation' ?>">
-                                <i class="fa-solid fa-poo"></i>
-                                <p>Reservations</p>
-                            </a>
-                        </li>
-                        <li class="nav-item me-4">
                             <a class="nav-link" href="#" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                                 <i class="fa-solid fa-user-lock"></i>
                                 <p>Connection</p>
@@ -144,6 +120,32 @@
                                 </button>
                             </div>
                         </nav>
+                        <ul class="navbar-nav text-center flex-md-row mt-5">
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="<?= '/user' ?>">
+                                    <i class="fa-solid fa-poo"></i>
+                                    <p>Utilisateurs</p>
+                                </a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="<?= '/hotel' ?>">
+                                    <i class="fa-solid fa-poo"></i>
+                                    <p>Hotels</p>
+                                </a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="<?= '/room' ?>">
+                                    <i class="fa-solid fa-poo"></i>
+                                    <p>Chambres</p>
+                                </a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="<?= '/reservation' ?>">
+                                    <i class="fa-solid fa-poo"></i>
+                                    <p>Reservations</p>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -157,9 +159,9 @@
                         <img src="/core/img/donkey.png" alt="DonkeyStay Logo" title="DonkeyStay Alive" class="img-fluid" style="height:45px;">
                     </a>
                 </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav text-center flex-md-row">
@@ -255,6 +257,6 @@
 
 
     </header>
-    <main class="container-fluid" style="margin-top:96px;">
+    <main class="container-fluid p-0" style="margin-top:96px;">
 
         <?php include 'ConnectForm/subscription.php'; ?>
