@@ -31,8 +31,8 @@ class Router
             }else{
 
                 //// call_user_func_array ////
-                /* je ne comprend pas vraiment comment ça marche
-                */
+                /* je ne comprend pas vraiment comment ça marche */
+
                 isset($params[0]) ? call_user_func_array([$controller,$action],$params) : $controller->$action();
                 //isset($params[0]) ? $controller->$action($params) : $controller->$action();// vielle version
             }

@@ -87,9 +87,9 @@ abstract class DataBaseModel extends DataBaseAccess
             $query = $this->dbAccess->prepare($sql);
             $query->execute($attributs);
             return $query;
-        }else{
-            return $this->dbAccess->query($sql);
         }
+        
+        return $this->dbAccess->query($sql);
     }
 
     // hydrater un objet en récupérant les données d'un tableau pour les utiliser avec les setters.
