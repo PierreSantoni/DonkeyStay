@@ -1,4 +1,10 @@
-<div class="row">
+<?php
+
+use App\models\Room;
+
+?>
+
+<div class="row p-5">
     <h5>Chambre N°<?= $room->roomNumber; ?> de l'<?= $hotel->hotelName; ?></h5>
     <article>
         <h4>Détails de la Chambre</h4>
@@ -13,4 +19,16 @@
             <p class="mb-0">Au <?= $reservation->reservationFin; ?></p>
         <?php endforeach; ?>
     </article>
+        <form action="" method="POST">
+            <button type="submite" class="btn btn-danger" name="delete">
+                Delete $this <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+        </form>
 </div>
+
+<?php
+if (isset($_POST["delete"])) {
+    (new Room)->delete($hotel->hotelID);
+    header('location:/hotel');
+}
+?>

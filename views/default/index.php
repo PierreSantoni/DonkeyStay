@@ -10,13 +10,13 @@
                         </div>
                         <div class="form-group">
                             <label for="arrivee">Arrival Date</label>
-                            <input type="date" class="form-control" id="arrivee" placeholder="Enter arrival date" min="<?php echo date('Y-m-d'); ?>">
+                            <input type="date"  name="reservationDebut" class="form-control" id="arrivee" placeholder="Enter arrival date" min="<?php echo date('Y-m-d'); ?>">
                         </div>
                         <div class="form-group">
                             <label for="depart">Departure Date</label>
-                            <input type="date" class="form-control" id="depart" placeholder="Enter departure date" min="<?php echo date('Y-m-d'); ?>">
+                            <input type="date" name="reservationFin" class="form-control" id="depart" placeholder="Enter departure date" min="<?php echo date('Y-m-d'); ?>">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group d-none">
                             <label for="personnes">Number of Guests</label>
                             <div class="row">
                                 <div class="col-md-6">
@@ -29,7 +29,7 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="submit" class="btn btn-primary btn-block" value="Search">
+                        <input type="submit" class="btn btn-primary btn-block w-100" value="Search">
                     </form>
                 </div>
             </div>

@@ -23,15 +23,17 @@ abstract class DataBaseModel extends DataBaseAccess
         }
         $fields = implode(" AND ", $fields);
         $fields = 'SELECT * FROM ' . $this->table . ' WHERE ' . $fields;
+        
         $findBy = $this->requete($fields, $values);
+
         return $findBy->fetchAll();
     }
 
     public function findByID(int $id)
     {
-        return $this->requete("SELECT * FROM {$this->table} WHERE {$this->table}id = $id")->fetch();
+        return $this->requete("SELECT * FROM {$this->table} WHERE {$this->table}ID = $id")->fetch();
     }
-
+    
     public function create()
     {
         $fields = [];
@@ -50,7 +52,7 @@ abstract class DataBaseModel extends DataBaseAccess
         return $this->requete($create, $values);
     }
     
-    public function update(int $tableID)
+    public function update()
     {
         $fields = [];
         $values = [];
@@ -60,10 +62,11 @@ abstract class DataBaseModel extends DataBaseAccess
                 $values[] = $value;
             }
         }
+
         $tableID = $this->table.'ID';
         $values[] = $this->$tableID;
         $fields = implode(", ", $fields);
-        $fields = 'UPDATE ' . $this->table . ' SET ' . $fields . ' WHERE ' . $tableID . ' = ?';
+        $fields = 'UPDATE ' . $this->table . ' SET ' . $fields . ' WHERE ' . $this->table . 'ID = ?';
         $update = $this->requete($fields, $values);
         return $update;
     }
@@ -89,8 +92,8 @@ abstract class DataBaseModel extends DataBaseAccess
         }
     }
 
-    // hydrater un objet en récupérant les données d'un tableau ou d'un objet pour les utiliser avec les setters.
-    public function hydrate($attributs)
+    // hydrater un objet en récupérant les données d'un tableau pour les utiliser avec les setters.
+    public function hydrate(array $attributs)
     {
         foreach ($attributs as $key => $value) {
             $setter = 'set_' . $key;
