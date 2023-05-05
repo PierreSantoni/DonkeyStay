@@ -17,11 +17,11 @@
 <pre>
     <?php var_dump($_POST); ?>
     <?php
-    if($_POST["reservationDebut"] < $_POST["reservationFin"]){
+    if ($_POST["reservationDebut"] < $_POST["reservationFin"]) {
         echo " Début plus petit que Fin";
-    }elseif($_POST["reservationDebut"] > $_POST["reservationFin"]){
+    } elseif ($_POST["reservationDebut"] > $_POST["reservationFin"]) {
         echo "Fin plus petit que Début";
-    }else{
+    } else {
         echo "Egalité !!";
     }
     ?>

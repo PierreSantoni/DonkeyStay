@@ -10,7 +10,7 @@
                         </div>
                         <div class="form-group">
                             <label for="arrivee">Arrival Date</label>
-                            <input type="date"  name="reservationDebut" class="form-control" id="arrivee" placeholder="Enter arrival date" min="<?php echo date('Y-m-d'); ?>">
+                            <input type="date" name="reservationDebut" class="form-control" id="arrivee" placeholder="Enter arrival date" min="<?php echo date('Y-m-d'); ?>">
                         </div>
                         <div class="form-group">
                             <label for="depart">Departure Date</label>

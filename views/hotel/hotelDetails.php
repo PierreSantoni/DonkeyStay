@@ -1,15 +1,16 @@
 <?php
 
 use App\models\Hotel;
+
 $stars = $hotel->hotelStars;
 ?>
 
 <div class="row p-5">
     <section>
         <h2><?= $hotel->hotelName; ?></h2>
-            <?php for($i = 0; $i < $stars; $i++): ?>
-                <i class="fa-solid fa-star"></i>
-            <?php endfor; ?>
+        <?php for ($i = 0; $i < $stars; $i++) : ?>
+            <i class="fa-solid fa-star"></i>
+        <?php endfor; ?>
         <article>
             <p class="mb-0">Hotel <?= $stars; ?> étoiles</p>
             <p class="mb-0"><?= $hotel->hotelName . ", " . $hotel->hotelAdress . ", " . $hotel->hotelCity . ", " . $hotel->hotelCountry; ?></p>

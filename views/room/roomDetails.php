@@ -19,11 +19,11 @@ use App\models\Room;
             <p class="mb-0">Au <?= $reservation->reservationFin; ?></p>
         <?php endforeach; ?>
     </article>
-        <form action="" method="POST">
-            <button type="submite" class="btn btn-danger" name="delete">
-                Delete $this <i class="fa-solid fa-circle-xmark"></i>
-            </button>
-        </form>
+    <form action="" method="POST">
+        <button type="submite" class="btn btn-danger" name="delete">
+            Delete $this <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+    </form>
 </div>
 
 <?php

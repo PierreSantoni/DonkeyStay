@@ -3,13 +3,15 @@
 use App\models\User;
 
 $checked = null;
-if($user->userAdmin){ $checked = "checked"; }
+if ($user->userAdmin) {
+    $checked = "checked";
+}
 
 ?>
 
 <div class="row p-5">
     <article>
-        <h2>Profil de : <?= $user->userFirst . " " . $user->userLast . " (ID: ". $user->userID. ")"; ?></h2>
+        <h2>Profil de : <?= $user->userFirst . " " . $user->userLast . " (ID: " . $user->userID . ")"; ?></h2>
         <p class="mb-0">Fonction : <?= $user->userAdmin ? "Administrateur" : "Utilisateur"; ?></p>
         <p class="mb-0">eMail : <?= $user->userEmail; ?></p>
     </article>
@@ -52,7 +54,7 @@ if($user->userAdmin){ $checked = "checked"; }
 
 
 <?php
-if(isset($_POST["update"])){
+if (isset($_POST["update"])) {
     $user = new User;
     $user = $user->hydrate($_POST);
     $user->update($user);
