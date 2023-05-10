@@ -1,5 +1,8 @@
-source core/database/DonkeyStayTables.sql;
-source core/database/DonkeyStayBDD.sql;
+/*source core/database/DonkeyStayTables.sql;
+source core/database/DonkeyStayBDD.sql;*/
+
+source DonkeyStayTables.sql;
+source DonkeyStayBDD.sql;
 
 SELECT * FROM user;
 SELECT * FROM hotel;

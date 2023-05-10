@@ -28,7 +28,7 @@ abstract class Controller
         */
         ob_start();
 
-        require_once ROOT . '/views/' . $fichier . '.php';
+        require_once ROOT . '/views/' . $fichier . '.html.php';
 
         //// Fonction ob_get_clean() ////
         /*
@@ -36,7 +36,7 @@ abstract class Controller
         */
         $display = ob_get_clean();
 
-        require_once ROOT . '/views/' . $index . '.php';
+        require_once ROOT . '/views/' . $index . '.html.php';
     }
 
 }
