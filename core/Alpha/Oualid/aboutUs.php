@@ -10,7 +10,7 @@
                 <a href="#team" class="btn btn-donkey-primary mt-3">Meet Our Team</a>
             </div>
             <div class="col-md-6">
-                <img src="/Oualid/img/aboutUs2.jpg" alt="About Us" class="img-fluid">
+                <img src="/core/Alpha/Oualid/img/aboutUs2.jpg" alt="About Us" class="img-fluid">
             </div>
         </div>
     </div>
@@ -54,7 +54,7 @@
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <img src="/Oualid/img/aboutUs1.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3">
+                        <img src="/core/Alpha/Oualid/img/aboutUs1.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3">
                         <h4 class="card-title">Sarah CONNOR</h4>
                         <p class="card-text">CEO</p>
                     </div>
@@ -63,7 +63,7 @@
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <img src="/Oualid/img/aboutUs.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3">
+                        <img src="/core/Alpha/Oualid/img/aboutUs.jpg" alt="Team Member" class="img-fluid rounded-circle mb-3">
                         <h4 class="card-title">Marlene SASSEUR</h4>
 
                         <p class="card-text">Marlene is responsible for the day-to-day operations and management of Donkeystay. With over 15 years of experience in the hospitality industry, she brings a wealth of knowledge and expertise to the team.</p>

@@ -17,9 +17,9 @@
                     <!-- Grid column -->
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold">About</h6>
-                        <p><a class="text-white" href="/Oualid/aboutUs.php">About Us</a></p>
-                        <p><a class="text-white" href="/Oualid/careers.php">Careers</a></p>
-                        <p><a class="text-white" href="/Oualid/contact.php">Contact Us</a></p>
+                        <p><a class="text-white" href="/core/Alpha/Oualid/aboutUs.php">About Us</a></p>
+                        <p><a class="text-white" href="/core/Alpha/Oualid/careers.php">Careers</a></p>
+                        <p><a class="text-white" href="/core/Alpha/Oualid/contact.php">Contact Us</a></p>
                     </div>
                     <!-- Grid column -->
                     <hr class="w-100 clearfix d-md-none" />

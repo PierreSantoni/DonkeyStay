@@ -13,9 +13,9 @@
 
     <!-- CUSTOM CSS (Bootsrap 5.3.0 Alpha 3 inside)-->
     <link href="/core/scss/custom.css" rel="stylesheet">
-    <link href="/Oualid/style.css" rel="stylesheet">
-    <link href="/Oualid/Rooms.css" rel="stylesheet">
-    <link href="/Oualid/contact.css" rel="stylesheet">
+    <link href="/core/Alpha/Oualid/style.css" rel="stylesheet">
+    <link href="/core/Alpha/Oualid/Rooms.css" rel="stylesheet">
+    <link href="/core/Alpha/Oualid/contact.css" rel="stylesheet">
 
 </head>
 
@@ -37,19 +37,19 @@
                             </a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link" href="/Oualid/reservation.php">
+                            <a class="nav-link" href="/core/Alpha/Oualid/reservation.php">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Reservations</p>
                             </a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link" href="/Oualid/aboutUs.php">
+                            <a class="nav-link" href="/core/Alpha/Oualid/aboutUs.php">
                                 <i class="fa-solid fa-users"></i>
                                 <p>About Us</p>
                             </a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link" href="/Oualid/rooms.php">
+                            <a class="nav-link" href="/core/Alpha/Oualid/rooms.php">
                                 <i class="fa-solid fa-bed"></i>
                                 <p>Our Rooms</p>
                             </a>
@@ -166,25 +166,25 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav text-center flex-md-row">
                         <li class="nav-item me-4">
-                            <a class="nav-link" aria-current="page" href="/Oualid/index.php">
+                            <a class="nav-link" aria-current="page" href="/core/Alpha/Oualid/index.php">
                                 <i class="fa-solid fa-house"></i>
                                 <p>Home</p>
                             </a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link" href="/Oualid/reservation.php">
+                            <a class="nav-link" href="/core/Alpha/Oualid/reservation.php">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Reservations</p>
                             </a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link" href="/Oualid/aboutUs.php">
+                            <a class="nav-link" href="/core/Alpha/Oualid/aboutUs.php">
                                 <i class="fa-solid fa-users"></i>
                                 <p>About Us</p>
                             </a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link" href="/Oualid/rooms.php">
+                            <a class="nav-link" href="/core/Alpha/Oualid/rooms.php">
                                 <i class="fa-solid fa-bed"></i>
                                 <p>Our Rooms</p>
                             </a>

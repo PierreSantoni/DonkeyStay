@@ -29,19 +29,19 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/Oualid/img/ourRooms1.jpg" class="d-block w-100" alt="Picture Room">
+                    <img src="/core/Alpha/Oualid/img/ourRooms1.jpg" class="d-block w-100" alt="Picture Room">
                     <div class="carousel-caption d-none d-md-block">
 
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/Oualid/img/mainRooms.jpg" class="d-block w-100" alt="Picture Room">
+                    <img src="/core/Alpha/Oualid/img/mainRooms.jpg" class="d-block w-100" alt="Picture Room">
                     <div class="carousel-caption d-none d-md-block">
 
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/Oualid/img/ourRooms2.jpg" class="d-block w-100" alt="Picture Room">
+                    <img src="/core/Alpha/Oualid/img/ourRooms2.jpg" class="d-block w-100" alt="Picture Room">
                     <div class="carousel-caption d-none d-md-block">
 
                     </div>
